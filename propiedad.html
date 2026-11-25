@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Propiedad | Andagana Corporación</title>
+  <meta name="theme-color" content="#0a1a45">
+  <link rel="icon" type="image/png" href="img/logo-icono.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="marca" href="index.html" aria-label="Andagana Corporación, inicio">
+        <span class="marca-icono"><img src="img/logo-icono.png" alt=""></span>
+        <span class="marca-texto"><strong>ANDAGANA</strong><small>Corporación</small></span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a class="enlace" href="index.html">Inicio</a>
+        <a class="enlace" href="index.html#propiedades">Propiedades</a>
+        <a class="enlace" href="index.html#contacto">Contacto</a>
+        <a class="btn btn-wa" id="wa-cabecera" target="_blank" rel="noopener" data-icono="whatsapp"><span><span class="txt-largo">Consultar por </span>WhatsApp</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="ficha">
+    <div class="contenedor" id="ficha"></div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <a class="marca" href="index.html">
+        <span class="marca-icono"><img src="img/logo-icono.png" alt=""></span>
+        <span class="marca-texto"><strong>ANDAGANA</strong><small>Corporación</small></span>
+      </a>
+      <div class="pie-eslogan">Financiamos <span class="script">Oportunidades</span>, Entregamos <span class="script">Hogares</span></div>
+      <div>© <span data-anio></span> Andagana Corporación</div>
+    </div>
+  </footer>
+
+  <div class="visor" id="visor" role="dialog" aria-modal="true" aria-label="Fotos de la propiedad">
+    <button class="visor-cerrar" id="visor-cerrar" aria-label="Cerrar"></button>
+    <button class="galeria-flecha prev" id="visor-prev" aria-label="Foto anterior"></button>
+    <img id="visor-img" alt="">
+    <button class="galeria-flecha next" id="visor-next" aria-label="Foto siguiente"></button>
+    <span class="galeria-contador" id="visor-contador"></span>
+  </div>
+
+  <div class="barra-movil" id="barra-movil"></div>
+  <a class="wa-flotante" id="wa-flotante" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" data-icono="whatsapp"></a>
+
+  <script src="data/propiedades.js"></script>
+  <script src="js/comun.js"></script>
+  <script src="js/propiedad.js"></script>
+</body>
+</html>

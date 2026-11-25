@@ -1,0 +1,129 @@
+/* Funciones compartidas por todas las páginas */
+(function () {
+  "use strict";
+
+  // ---------- Iconos (SVG de línea) ----------
+  const P = {
+    casa: '<path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/>',
+    terreno: '<path d="M3 20h18"/><path d="M4 20 9 9l4 6 3-4 4 9"/><circle cx="17" cy="5" r="2"/>',
+    departamento: '<rect x="4" y="3" width="10" height="18" rx="1"/><path d="M14 9h6v12h-6"/><path d="M7 7h1M10 7h1M7 11h1M10 11h1M7 15h1M10 15h1M17 13h0M17 17h0"/>',
+    local: '<path d="M4 9h16l-1.5-5h-13z"/><path d="M4 9a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0 2.7 2.7 0 0 0 5.3 0"/><path d="M5 11.5V20h14v-8.5"/><path d="M10 20v-5h4v5"/>',
+    todos: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+    garaje: '<path d="M3 21V9l9-5 9 5v12"/><path d="M7 21v-6h10v6"/><path d="M7 18h10"/>',
+    servicios: '<path d="M12 3s-5 5.6-5 9.5a5 5 0 0 0 10 0C17 8.6 12 3 12 3z"/><path d="M12 17a3 3 0 0 1-3-3"/>',
+    vias: '<path d="M8 3 4 21"/><path d="M16 3l4 18"/><path d="M12 4v2.5M12 10.5v3M12 17.5V20"/>',
+    construccion: '<path d="M4 21V10l8-6 8 6v11"/><path d="M4 21h16"/><path d="M9 21v-7h6v7"/><path d="M2 10h3M19 10h3"/>',
+    area: '<path d="M4 4h6M4 4v6M20 20h-6M20 20v-6M4 20l16-16"/><path d="M14 4h6v6M4 14v6h6"/>',
+    ubicacion: '<path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
+    buscar: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
+    filtro: '<path d="M4 5h16M7 12h10M10 19h4"/>',
+    camara: '<path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/>',
+    flechaIzq: '<path d="m15 5-7 7 7 7"/>',
+    flechaDer: '<path d="m9 5 7 7-7 7"/>',
+    volver: '<path d="M19 12H5"/><path d="m11 18-6-6 6-6"/>',
+    cerrar: '<path d="M6 6l12 12M18 6 6 18"/>',
+    ampliar: '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
+    check: '<path d="m5 12.5 4.5 4.5L19 7"/>',
+    dinero: '<rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.8"/><path d="M6 9.5v5M18 9.5v5"/>',
+    escudo: '<path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12 2.2 2.2 4.4-4.4"/>',
+    apreton: '<path d="m11 17 2 2a1.4 1.4 0 0 0 2-2"/><path d="m14 14 2.5 2.5a1.4 1.4 0 0 0 2-2L15 11"/><path d="M3 8l4-4 5 5"/><path d="m21 8-4-4-4.5 4.5a2 2 0 0 0 2.8 2.8L17 9.5"/><path d="M3 8v6l6 6 2-2"/><path d="M21 8v6l-2 2"/>',
+    rayo: '<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',
+    telefono: '<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>',
+    mapa: '<path d="m9 4-6 3v13l6-3 6 3 6-3V4l-6 3z"/><path d="M9 4v13M15 7v13"/>'
+  };
+  const WA = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91A9.84 9.84 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.2 8.2 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23a7.46 7.46 0 0 1-1.38-1.72c-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48a.92.92 0 0 0-.67.31c-.23.25-.87.85-.87 2.08s.89 2.42 1.02 2.58c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>';
+
+  function icono(nombre) {
+    if (nombre === "whatsapp") return WA;
+    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (P[nombre] || "") + "</svg>";
+  }
+
+  // ---------- Formatos ----------
+  const fmtNum = new Intl.NumberFormat("es-EC", { maximumFractionDigits: 2 });
+  function dinero(n) { return "$" + new Intl.NumberFormat("es-EC", { maximumFractionDigits: 0 }).format(n).replace(/,/g, "."); }
+  function m2(n) { return fmtNum.format(n) + " m²"; }
+
+  function precioHTML(p, conDesde) {
+    if (p.precioTexto) return p.precioTexto;
+    if (p.precio == null) return "Consultar precio";
+    return (conDesde && p.precioDesde ? "<small>Desde</small>" : "") + dinero(p.precio);
+  }
+  function precioPlano(p) {
+    if (p.precioTexto) return p.precioTexto;
+    if (p.precio == null) return "Consultar precio";
+    return (p.precioDesde ? "Desde " : "") + dinero(p.precio);
+  }
+  function areaTerrenoTexto(p) {
+    if (p.areaTerrenoTexto) return p.areaTerrenoTexto;
+    if (p.areaTerreno == null) return null;
+    return (p.precioDesde ? "Desde " : "") + m2(p.areaTerreno);
+  }
+
+  const TIPOS = {
+    casa: { nombre: "Casa", plural: "Casas" },
+    terreno: { nombre: "Terreno", plural: "Terrenos" },
+    departamento: { nombre: "Departamento", plural: "Departamentos" },
+    local: { nombre: "Local", plural: "Locales" }
+  };
+
+  function foto(p, i) {
+    const f = (p.fotos || [])[i || 0];
+    if (!f) return "img/logo.png";
+    if (/^(https?:)?\/\//.test(f) || f.indexOf("/") !== -1) return f;
+    return "img/propiedades/" + p.carpeta + "/" + f;
+  }
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  }
+
+  function ubicacion(p) {
+    return p.sector && p.sector !== p.canton ? p.sector + ", " + p.canton : p.canton;
+  }
+
+  // ---------- WhatsApp ----------
+  function whatsappURL(p) {
+    const cfg = window.ANDAGANA || {};
+    let msg;
+    if (p) {
+      const cod = p.codigo ? "con código *" + p.codigo + "*" : "(sin código)";
+      msg = "Hola Andagana Corporación, me interesa la propiedad " + cod + ": " + p.titulo +
+        " (" + ubicacion(p) + "), " + precioPlano(p) + ". ¿Me pueden dar más información sobre el financiamiento?";
+    } else {
+      msg = "Hola Andagana Corporación, me gustaría recibir información sobre sus propiedades y el financiamiento inmediato.";
+    }
+    return "https://wa.me/" + (cfg.whatsapp || "593960574213") + "?text=" + encodeURIComponent(msg);
+  }
+
+  // ---------- Tarjeta de propiedad ----------
+  function tarjeta(p) {
+    const area = areaTerrenoTexto(p);
+    return '<a class="tarjeta aparecer" href="propiedad.html?id=' + encodeURIComponent(p.id) + '">' +
+      '<div class="tarjeta-foto">' +
+        '<img src="' + esc(foto(p, 0)) + '" alt="' + esc(p.titulo) + '" loading="lazy">' +
+        '<span class="etiqueta-fin">' + icono("rayo") + "Financiamiento inmediato</span>" +
+        '<span class="etiqueta-tipo">' + esc(p.subtipo || TIPOS[p.tipo].nombre) + "</span>" +
+        '<span class="tarjeta-fotos-num">' + icono("camara") + (p.fotos || []).length + "</span>" +
+      "</div>" +
+      '<div class="tarjeta-cuerpo">' +
+        '<div class="tarjeta-ubicacion">' + icono("ubicacion") + esc(ubicacion(p)) + "</div>" +
+        "<h3>" + esc(p.titulo) + "</h3>" +
+        '<div class="tarjeta-precio">' + precioHTML(p, true) + "</div>" +
+        '<div class="tarjeta-datos">' +
+          (area ? "<span title=\"Área de terreno\">" + icono("area") + esc(area) + "</span>" : "") +
+          (p.areaConstruccion ? "<span title=\"Área de construcción\">" + icono("construccion") + m2(p.areaConstruccion) + "</span>" : "") +
+          '<span class="tarjeta-codigo">' + (p.codigo ? "COD: " + esc(p.codigo) : "SIN CÓDIGO") + "</span>" +
+        "</div>" +
+      "</div>" +
+    "</a>";
+  }
+
+  function iniciarComun() {
+    document.querySelectorAll("[data-wa-general]").forEach(a => { a.href = whatsappURL(null); });
+    document.querySelectorAll("[data-icono]").forEach(el => { el.insertAdjacentHTML("afterbegin", icono(el.dataset.icono)); });
+    document.querySelectorAll("[data-tel]").forEach(el => { el.textContent = (window.ANDAGANA || {}).whatsappVisible || ""; });
+    document.querySelectorAll("[data-anio]").forEach(el => { el.textContent = new Date().getFullYear(); });
+  }
+
+  window.AG = { icono, dinero, m2, precioHTML, precioPlano, areaTerrenoTexto, TIPOS, foto, esc, ubicacion, whatsappURL, tarjeta, iniciarComun };
+})();

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andagana Corporación | Financiamos Oportunidades, Entregamos Hogares</title>
+  <meta name="description" content="Casas, terrenos, departamentos y locales en venta en Ambato, Quito y el centro del Ecuador, con financiamiento inmediato. Andagana Corporación.">
+  <meta name="theme-color" content="#0a1a45">
+  <link rel="icon" type="image/png" href="img/logo-icono.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="marca" href="index.html" aria-label="Andagana Corporación, inicio">
+        <span class="marca-icono"><img src="img/logo-icono.png" alt=""></span>
+        <span class="marca-texto"><strong>ANDAGANA</strong><small>Corporación</small></span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a class="enlace" href="#inicio">Inicio</a>
+        <a class="enlace" href="#propiedades">Propiedades</a>
+        <a class="enlace" href="#contacto">Contacto</a>
+        <a class="btn btn-wa" data-wa-general target="_blank" rel="noopener" data-icono="whatsapp"><span><span class="txt-largo">Escríbenos por </span>WhatsApp</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. PORTADA -->
+    <section class="portada" id="inicio">
+      <div class="portada-fondo" aria-hidden="true"></div>
+      <div class="contenedor">
+        <div class="aparecer">
+          <div class="portada-logo"><img src="img/logo.png" alt="Andagana Corporación"></div>
+          <h1>Financiamos <span class="script">Oportunidades</span>Entregamos <span class="script">Hogares</span></h1>
+          <p class="lead">Casas, terrenos, departamentos y locales comerciales en Ambato, Quito y el centro del país, con <strong>financiamiento inmediato</strong> y precios especiales.</p>
+          <div class="portada-acciones">
+            <a class="btn btn-plata" href="#propiedades" data-icono="buscar">Ver propiedades</a>
+            <a class="btn btn-borde" data-wa-general target="_blank" rel="noopener" data-icono="whatsapp">Asesoría gratuita</a>
+          </div>
+        </div>
+        <div class="portada-cifras aparecer" aria-label="Resumen">
+          <div class="cifra"><div class="cifra-num" id="cifra-total">0</div><div class="cifra-txt"><strong>Propiedades</strong>disponibles hoy</div></div>
+          <div class="cifra"><div class="cifra-num" id="cifra-cantones">0</div><div class="cifra-txt"><strong>Cantones</strong>en <span id="cifra-provincias">0</span> provincias</div></div>
+          <div class="cifra"><div class="cifra-num" data-icono="rayo"></div><div class="cifra-txt"><strong>Financiamiento</strong>inmediato</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="franja" aria-label="Por qué elegirnos">
+      <div class="contenedor">
+        <div class="franja-item" data-icono="apreton"><span><strong>Venta inmediata</strong>Trámites ágiles y acompañamiento</span></div>
+        <div class="franja-item" data-icono="escudo"><span><strong>Compra segura</strong>Documentos en regla</span></div>
+        <div class="franja-item" data-icono="dinero"><span><strong>Financiamiento inmediato</strong>En todas nuestras propiedades</span></div>
+      </div>
+    </section>
+
+    <!-- 2 y 3. LISTADO Y FILTROS -->
+    <section class="seccion" id="propiedades">
+      <div class="contenedor">
+        <div class="seccion-titulo">
+          <div>
+            <span class="eyebrow">Catálogo</span>
+            <h2>Propiedades en venta</h2>
+            <p>Encuentra la propiedad ideal y solicita tu financiamiento al instante.</p>
+          </div>
+        </div>
+
+        <form class="filtros" id="filtros" onsubmit="return false" aria-label="Filtros de búsqueda">
+          <div class="filtros-tipos" id="filtro-tipos" role="group" aria-label="Tipo de propiedad"></div>
+          <button type="button" class="btn btn-navy btn-filtros" id="btn-filtros" data-icono="filtro" aria-expanded="false">Más filtros</button>
+          <div class="filtros-campos">
+            <div class="campo campo-buscar campo-ancho">
+              <label for="f-buscar">Buscar</label>
+              <input id="f-buscar" type="search" placeholder="Sector, código o palabra clave…" autocomplete="off">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            </div>
+            <div class="campo">
+              <label for="f-canton">Cantón</label>
+              <select id="f-canton"><option value="">Todos</option></select>
+            </div>
+            <div class="campo">
+              <label for="f-sector">Sector</label>
+              <select id="f-sector"><option value="">Todos</option></select>
+            </div>
+            <div class="campo campo-ancho">
+              <label for="f-pmin">Precio (USD)</label>
+              <div class="rango">
+                <input id="f-pmin" type="number" inputmode="numeric" min="0" step="1000" placeholder="Mínimo">
+                <input id="f-pmax" type="number" inputmode="numeric" min="0" step="1000" placeholder="Máximo" aria-label="Precio máximo">
+              </div>
+            </div>
+            <div class="campo campo-ancho">
+              <label for="f-amin">Área de terreno (m²)</label>
+              <div class="rango">
+                <input id="f-amin" type="number" inputmode="numeric" min="0" step="50" placeholder="Mínima">
+                <input id="f-amax" type="number" inputmode="numeric" min="0" step="50" placeholder="Máxima" aria-label="Área máxima">
+              </div>
+            </div>
+            <div class="campo campo-ancho">
+              <label for="f-orden">Ordenar</label>
+              <select id="f-orden">
+                <option value="">Recomendadas</option>
+                <option value="precio-asc">Menor precio</option>
+                <option value="precio-desc">Mayor precio</option>
+                <option value="area-desc">Mayor área</option>
+                <option value="area-asc">Menor área</option>
+              </select>
+            </div>
+          </div>
+          <div class="filtros-pie">
+            <div class="resultado-cuenta" id="cuenta" aria-live="polite"></div>
+            <button type="button" class="btn-limpiar" id="btn-limpiar">Limpiar filtros</button>
+          </div>
+        </form>
+
+        <div class="grilla" id="grilla"></div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="seccion contacto" id="contacto">
+      <div class="contenedor">
+        <div>
+          <span class="eyebrow" style="color:var(--silver-300)">Contáctanos</span>
+          <h2>¿Listo para tu nuevo <span class="script">Hogar</span>?</h2>
+          <p>Escríbenos y un asesor te ayudará a elegir la propiedad y el plan de financiamiento que mejor se ajusta a ti.</p>
+          <a class="btn btn-wa" data-wa-general target="_blank" rel="noopener" data-icono="whatsapp">Escribir por WhatsApp</a>
+        </div>
+        <div class="contacto-tarjeta">
+          <div class="fila" data-icono="whatsapp"><div><small>WhatsApp</small><strong data-tel></strong></div></div>
+          <div class="fila" data-icono="ubicacion"><div><small>Cobertura</small><strong>Ambato, Quito y centro del país</strong></div></div>
+          <div class="fila" data-icono="dinero"><div><small>Beneficio</small><strong>Financiamiento inmediato</strong></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <a class="marca" href="index.html">
+        <span class="marca-icono"><img src="img/logo-icono.png" alt=""></span>
+        <span class="marca-texto"><strong>ANDAGANA</strong><small>Corporación</small></span>
+      </a>
+      <div class="pie-eslogan">Financiamos <span class="script">Oportunidades</span>, Entregamos <span class="script">Hogares</span></div>
+      <div>© <span data-anio></span> Andagana Corporación</div>
+    </div>
+  </footer>
+
+  <a class="wa-flotante" data-wa-general target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" data-icono="whatsapp"></a>
+
+  <script src="data/propiedades.js"></script>
+  <script src="js/comun.js"></script>
+  <script src="js/inicio.js"></script>
+</body>
+</html>
