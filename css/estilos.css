@@ -562,3 +562,26 @@ button, input, select { font: inherit; color: inherit; }
   .aparecer { animation: aparecer .5s ease both; }
   @keyframes aparecer { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 }
+
+/* ---------- Aviso de cookies ---------- */
+.aviso-cookies {
+  position: fixed; left: 1rem; bottom: 1rem; z-index: 80; max-width: 440px;
+  display: flex; flex-direction: column; gap: .85rem; padding: 1.1rem 1.2rem;
+  background: var(--white); color: var(--ink); border-radius: var(--radius);
+  border: 1px solid var(--silver-200); border-top: 3px solid var(--gold-500); box-shadow: var(--shadow-lg);
+  transform: translateY(calc(100% + 2rem)); opacity: 0; transition: transform .35s ease, opacity .35s ease;
+}
+.aviso-cookies.visible { transform: none; opacity: 1; }
+.aviso-cookies p { margin: 0; font-size: .9rem; line-height: 1.45; color: var(--ink-soft); }
+.aviso-cookies strong { color: var(--navy-900); }
+.aviso-botones { display: flex; gap: .6rem; justify-content: flex-end; }
+.aviso-botones .btn { padding: .6rem 1.2rem; font-size: .9rem; }
+.btn-borde-navy { background: transparent; color: var(--navy-900); border: 1.5px solid var(--silver-300); }
+.btn-borde-navy:hover { background: var(--silver-100); }
+.enlace-cookies { background: none; border: 0; padding: 0; color: inherit; font-size: inherit; text-decoration: underline; cursor: pointer; }
+.enlace-cookies:hover { color: var(--white); }
+@media (max-width: 760px) {
+  .aviso-cookies { left: .6rem; right: .6rem; bottom: .6rem; max-width: none; }
+  .aviso-botones .btn { flex: 1; }
+  body.con-barra .aviso-cookies { bottom: calc(76px + .6rem); }
+}

@@ -18,6 +18,20 @@
   }
 
   document.title = p.titulo + " | Andagana Corporación";
+
+  // Analítica: propiedad abierta (los clics de WhatsApp de esta página llevarán su código)
+  window.AG_PROPIEDAD = p;
+  if (window.AG_ANALITICA) {
+    const datos = {
+      codigo_propiedad: p.codigo || "SIN CODIGO",
+      propiedad_id: p.id,
+      tipo_propiedad: p.tipo,
+      canton: p.canton,
+      sector: p.sector || ""
+    };
+    if (p.precio != null) datos.precio = p.precio;
+    window.AG_ANALITICA.evento("ver_propiedad", datos);
+  }
   const wa = whatsappURL(p);
   const fotos = (p.fotos || []).map((_, i) => foto(p, i));
   const area = areaTerrenoTexto(p);

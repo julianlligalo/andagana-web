@@ -25,6 +25,7 @@
     if (!b) return;
     estado.tipo = b.dataset.tipo;
     actualizar();
+    registrarFiltro("tipo", estado.tipo);
   });
 
   // ---------- Cantón / sector ----------
@@ -102,6 +103,21 @@
     $("f-orden").value = estado.orden;
   }
 
+  // ---------- Analítica: uso de filtros ----------
+  // Los campos de texto y número esperan a que la persona deje de escribir.
+  const tempAnalitica = {};
+  function registrarFiltro(filtro, valor, esperar) {
+    if (!window.AG_ANALITICA) return;
+    const enviar = () => window.AG_ANALITICA.evento("usar_filtro", {
+      filtro: filtro,
+      valor: String(valor || "(todos)").slice(0, 100),
+      resultados: filtrar(estado).length
+    });
+    clearTimeout(tempAnalitica[filtro]);
+    if (esperar) tempAnalitica[filtro] = setTimeout(() => { valor = estado[filtro]; enviar(); }, 1200);
+    else enviar();
+  }
+
   // ---------- Eventos ----------
   const enlaces = { "f-buscar": "buscar", "f-canton": "canton", "f-sector": "sector", "f-pmin": "pmin", "f-pmax": "pmax", "f-amin": "amin", "f-amax": "amax", "f-orden": "orden" };
   let temporizador;
@@ -113,6 +129,7 @@
       if (id === "f-canton") estado.sector = "";
       clearTimeout(temporizador);
       temporizador = setTimeout(actualizar, ev === "input" ? 180 : 0);
+      registrarFiltro(enlaces[id], el.value, ev === "input");
     });
   });
   $("btn-limpiar").addEventListener("click", () => {
@@ -120,6 +137,7 @@
     ["f-buscar", "f-pmin", "f-pmax", "f-amin", "f-amax"].forEach(id => { $(id).value = ""; });
     $("f-canton").value = "";
     actualizar();
+    registrarFiltro("limpiar_filtros", "");
   });
   $("btn-filtros").addEventListener("click", () => {
     const f = $("filtros");
