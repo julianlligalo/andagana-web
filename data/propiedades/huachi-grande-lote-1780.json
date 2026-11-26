@@ -1,0 +1,42 @@
+{
+  "codigo": "000051DM",
+  "titulo": "Lote de 1.780 m² en Huachi Grande",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Huachi Grande",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 160000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 1780,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "A tres cuadras del centro parroquial"
+  ],
+  "viasAcceso": "Calles asfaltadas",
+  "descripcion": "Propiedad ubicada en Huachi Grande, a tres cuadras del centro parroquial. Su área de terreno es de 1.780 m². Cuenta con todos los servicios básicos y calles asfaltadas.",
+  "fotoPrincipal": "/img/propiedades/huachi-grande-lote-1780/01.jpg",
+  "galeria": [
+    "/img/propiedades/huachi-grande-lote-1780/02.jpg",
+    "/img/propiedades/huachi-grande-lote-1780/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Huachi Grande, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lote",
+  "ordenCatalogo": 22
+}

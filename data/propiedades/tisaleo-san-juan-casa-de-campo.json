@@ -1,0 +1,42 @@
+{
+  "codigo": "00003WLL",
+  "titulo": "Casa de campo en Tisaleo - San Juan",
+  "tipo": "casa",
+  "operacion": "venta",
+  "canton": "Tisaleo",
+  "sector": "San Juan",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 35000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 486,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "Línea de buses a 2 minutos"
+  ],
+  "viasAcceso": "Acceso vehicular",
+  "descripcion": "Casa de campo con lote de 486 m², ubicada en Tisaleo San Juan, a pocos metros del parque y de la Universidad Uniandes. Cuenta con acceso vehicular, línea de buses a dos minutos y todos los servicios básicos.",
+  "fotoPrincipal": "/img/propiedades/tisaleo-san-juan-casa-de-campo/01.jpg",
+  "galeria": [
+    "/img/propiedades/tisaleo-san-juan-casa-de-campo/02.jpg",
+    "/img/propiedades/tisaleo-san-juan-casa-de-campo/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "San Juan, Tisaleo, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa de campo",
+  "ordenCatalogo": 12
+}

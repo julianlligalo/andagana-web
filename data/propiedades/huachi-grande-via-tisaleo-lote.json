@@ -1,0 +1,43 @@
+{
+  "codigo": "00005HSA",
+  "titulo": "Lote en la vía Ambato - Tisaleo, Huachi Grande",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Huachi Grande",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 59500,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 1604,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso",
+    "Documentos en regla"
+  ],
+  "otrasCaracteristicas": [
+    "Línea de buses"
+  ],
+  "viasAcceso": "Sobre la vía principal Ambato - Tisaleo",
+  "descripcion": "Lote de 1.604 m² ubicado en la vía principal Ambato - Tisaleo. Se encuentra a 2 minutos de la plaza de ganado y cuenta con línea de buses. Cuenta con todos los servicios básicos. Documentos en regla.",
+  "fotoPrincipal": "/img/propiedades/huachi-grande-via-tisaleo-lote/01.jpg",
+  "galeria": [
+    "/img/propiedades/huachi-grande-via-tisaleo-lote/02.jpg",
+    "/img/propiedades/huachi-grande-via-tisaleo-lote/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Huachi Grande, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lote",
+  "ordenCatalogo": 33
+}

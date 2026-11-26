@@ -1,0 +1,45 @@
+{
+  "codigo": "000023HS",
+  "titulo": "Edificio de 6 departamentos tras la UTA",
+  "tipo": "departamento",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Huachi Chico",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 340000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 347.09,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 597.87,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": true,
+  "garajeDetalle": "Garaje para 5 vehículos",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "6 departamentos"
+  ],
+  "viasAcceso": "Vías asfaltadas",
+  "descripcion": "Propiedad ubicada tras la Universidad Técnica de Ambato, en las calles León Febres Cordero y La Valle. A pocas cuadras del Mall de Los Andes, el Mercado Mayorista y el Polideportivo. Consta de 6 departamentos y garaje para 5 vehículos.",
+  "fotoPrincipal": "/img/propiedades/huachi-chico-uta-departamentos/01.jpg",
+  "galeria": [
+    "/img/propiedades/huachi-chico-uta-departamentos/02.jpg",
+    "/img/propiedades/huachi-chico-uta-departamentos/03.jpg",
+    "/img/propiedades/huachi-chico-uta-departamentos/04.jpg",
+    "/img/propiedades/huachi-chico-uta-departamentos/05.jpg",
+    "/img/propiedades/huachi-chico-uta-departamentos/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Universidad Técnica de Ambato, Huachi Chico, Ambato, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Edificio de departamentos",
+  "ordenCatalogo": 26
+}

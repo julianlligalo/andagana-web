@@ -1,0 +1,40 @@
+{
+  "codigo": "00055G",
+  "titulo": "Lote en El Quinche - Santa Rosa",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Santa Rosa",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 62000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 5779,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [],
+  "viasAcceso": "Acceso vehicular de 12 m",
+  "descripcion": "Lote de 5.779 m² ubicado en la parroquia Santa Rosa, sector El Quinche. Cuenta con acceso vehicular de 12 metros y todos los servicios básicos.",
+  "fotoPrincipal": "/img/propiedades/el-quinche-santa-rosa-lote/01.jpg",
+  "galeria": [
+    "/img/propiedades/el-quinche-santa-rosa-lote/02.jpg",
+    "/img/propiedades/el-quinche-santa-rosa-lote/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Santa Rosa, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lote",
+  "ordenCatalogo": 17
+}

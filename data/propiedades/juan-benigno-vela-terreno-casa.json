@@ -1,0 +1,42 @@
+{
+  "codigo": "0000CA",
+  "titulo": "Terreno con casa en Juan Benigno Vela",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Juan Benigno Vela",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 109000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 4000,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 180,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "Casa con 3 habitaciones"
+  ],
+  "viasAcceso": "A un minuto de la vía Ambato - Guaranda",
+  "descripcion": "Lote de terreno de 4.000 m² ubicado en Juan Benigno Vela, sector La Compañía, a un minuto de la vía Ambato - Guaranda. Terreno con casa unifamiliar con sala, cocina y 3 habitaciones.",
+  "fotoPrincipal": "/img/propiedades/juan-benigno-vela-terreno-casa/01.jpg",
+  "galeria": [
+    "/img/propiedades/juan-benigno-vela-terreno-casa/02.jpg",
+    "/img/propiedades/juan-benigno-vela-terreno-casa/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Juan Benigno Vela, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Terreno con casa",
+  "ordenCatalogo": 19
+}

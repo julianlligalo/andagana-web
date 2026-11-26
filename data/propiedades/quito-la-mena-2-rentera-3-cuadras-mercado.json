@@ -1,0 +1,47 @@
+{
+  "codigo": "000501EP",
+  "titulo": "Casa rentera esquinera en La Mena 2",
+  "tipo": "casa-rentera",
+  "operacion": "venta",
+  "canton": "Quito",
+  "sector": "La Mena 2",
+  "provincia": "Pichincha",
+  "oficina": "quito",
+  "precio": 120000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 90,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 287,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": true,
+  "garajeDetalle": "Garaje para 2 vehículos",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "1 local comercial amplio",
+    "1 departamento",
+    "3 minidepartamentos"
+  ],
+  "viasAcceso": "Vías asfaltadas",
+  "descripcion": "Casa rentera con 1 local comercial amplio, 1 departamento completo y 3 minidepartamentos. Garaje para 2 vehículos. Está ubicada en La Mena 2, a 3 cuadras del mercado y del parque Combatientes.",
+  "fotoPrincipal": "/img/propiedades/quito-la-mena-2-rentera-3-cuadras-mercado/01.jpg",
+  "galeria": [
+    "/img/propiedades/quito-la-mena-2-rentera-3-cuadras-mercado/02.jpg",
+    "/img/propiedades/quito-la-mena-2-rentera-3-cuadras-mercado/03.jpg",
+    "/img/propiedades/quito-la-mena-2-rentera-3-cuadras-mercado/04.jpg",
+    "/img/propiedades/quito-la-mena-2-rentera-3-cuadras-mercado/05.jpg",
+    "/img/propiedades/quito-la-mena-2-rentera-3-cuadras-mercado/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Parque Ex Combatientes, La Mena 2, Quito, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa rentera",
+  "ordenCatalogo": 54
+}

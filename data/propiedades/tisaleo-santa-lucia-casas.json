@@ -1,0 +1,42 @@
+{
+  "codigo": "00027WLL",
+  "titulo": "2 casas pequeñas en Santa Lucía Centro",
+  "tipo": "casa",
+  "operacion": "venta",
+  "canton": "Tisaleo",
+  "sector": "Santa Lucía Centro",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 33000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 243,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "2 casas pequeñas"
+  ],
+  "viasAcceso": "Vías asfaltadas",
+  "descripcion": "2 casas pequeñas con 243 m² de terreno, ubicadas en Santa Lucía Centro - Tisaleo. Cerca del colegio Caracas y a 5 minutos del complejo Mushuc Runa. Cuentan con todos los servicios básicos.",
+  "fotoPrincipal": "/img/propiedades/tisaleo-santa-lucia-casas/01.jpg",
+  "galeria": [
+    "/img/propiedades/tisaleo-santa-lucia-casas/02.jpg",
+    "/img/propiedades/tisaleo-santa-lucia-casas/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Santa Lucía, Tisaleo, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casas pequeñas",
+  "ordenCatalogo": 3
+}

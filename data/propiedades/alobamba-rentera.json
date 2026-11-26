@@ -1,0 +1,47 @@
+{
+  "codigo": "0000001CA",
+  "titulo": "Propiedad rentera en Alobamba",
+  "tipo": "casa-rentera",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Alobamba",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 113000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 720,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 120,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "2 departamentos",
+    "1 local comercial",
+    "Áreas para jardinería"
+  ],
+  "viasAcceso": "Vías asfaltadas",
+  "descripcion": "Propiedad rentera con 2 departamentos completos y 1 local comercial. Áreas para jardinería. Cuenta con vías asfaltadas y está ubicada a 1 minuto de la Panamericana E35.",
+  "fotoPrincipal": "/img/propiedades/alobamba-rentera/01.jpg",
+  "galeria": [
+    "/img/propiedades/alobamba-rentera/02.jpg",
+    "/img/propiedades/alobamba-rentera/03.jpg",
+    "/img/propiedades/alobamba-rentera/04.jpg",
+    "/img/propiedades/alobamba-rentera/05.jpg",
+    "/img/propiedades/alobamba-rentera/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Alobamba, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Propiedad rentera",
+  "ordenCatalogo": 39
+}

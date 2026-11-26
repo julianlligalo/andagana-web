@@ -1,0 +1,48 @@
+{
+  "codigo": "000021CT",
+  "titulo": "Casa rentera en Quitumbe",
+  "tipo": "casa-rentera",
+  "operacion": "venta",
+  "canton": "Quito",
+  "sector": "Quitumbe",
+  "provincia": "Pichincha",
+  "oficina": "quito",
+  "precio": 130000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 180,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 377,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": true,
+  "garajeDetalle": "Amplio garaje",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "5 departamentos",
+    "3 minidepartamentos",
+    "1 local comercial",
+    "2 cuartos de bodega"
+  ],
+  "viasAcceso": "Cerca del terminal Quitumbe",
+  "descripcion": "Casa rentera en venta en el sector Quitumbe. Cuenta con 1 local comercial, 2 cuartos de bodega, 5 departamentos, 3 minidepartamentos, área de lavandería y amplio garaje.",
+  "fotoPrincipal": "/img/propiedades/quito-quitumbe-rentera/01.jpg",
+  "galeria": [
+    "/img/propiedades/quito-quitumbe-rentera/02.jpg",
+    "/img/propiedades/quito-quitumbe-rentera/03.jpg",
+    "/img/propiedades/quito-quitumbe-rentera/04.jpg",
+    "/img/propiedades/quito-quitumbe-rentera/05.jpg",
+    "/img/propiedades/quito-quitumbe-rentera/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Terminal Quitumbe, Quito, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa rentera",
+  "ordenCatalogo": 52
+}

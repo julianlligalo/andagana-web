@@ -1,0 +1,43 @@
+{
+  "codigo": "000082CE",
+  "titulo": "2 casas con locales y departamentos en Cunchibamba",
+  "tipo": "departamento",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Cunchibamba",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 335000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 2964,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 878,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": true,
+  "garajeDetalle": "Amplio garaje",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "3 locales comerciales",
+    "5 departamentos"
+  ],
+  "viasAcceso": "Junto a la Panamericana E35",
+  "descripcion": "2 casas en venta. Cuentan con 3 locales comerciales, 5 departamentos y amplio garaje, además de todos los servicios básicos. Su área de terreno es de 2.964 m² y su área de construcción es de 878 m².",
+  "fotoPrincipal": "/img/propiedades/cunchibamba-edificio/01.jpg",
+  "galeria": [
+    "/img/propiedades/cunchibamba-edificio/02.jpg",
+    "/img/propiedades/cunchibamba-edificio/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Cunchibamba, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Edificio rentero",
+  "ordenCatalogo": 6
+}

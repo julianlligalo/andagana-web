@@ -1,0 +1,44 @@
+{
+  "codigo": "00025CE",
+  "titulo": "Lote en Santa Rosa - Vía al Quinche",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Santa Rosa",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 59000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 1142,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso",
+    "Documentos en regla"
+  ],
+  "otrasCaracteristicas": [
+    "Superficie plana",
+    "Predio urbano"
+  ],
+  "viasAcceso": "Acceso vehicular de 8 m",
+  "descripcion": "Lote en venta de 1.142 m² ubicado en Santa Rosa, vía al Quinche. Cuenta con todos los servicios básicos y acceso vehicular de 8 m. Superficie plana. Su predio es urbano y sus documentos están en regla.",
+  "fotoPrincipal": "/img/propiedades/santa-rosa-via-al-quinche-lote/01.jpg",
+  "galeria": [
+    "/img/propiedades/santa-rosa-via-al-quinche-lote/02.jpg",
+    "/img/propiedades/santa-rosa-via-al-quinche-lote/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Santa Rosa, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lote",
+  "ordenCatalogo": 4
+}

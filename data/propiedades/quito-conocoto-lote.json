@@ -1,0 +1,42 @@
+{
+  "codigo": "000002EP",
+  "titulo": "Lote de 2.100 m² en Conocoto",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Quito",
+  "sector": "Conocoto",
+  "provincia": "Pichincha",
+  "oficina": "quito",
+  "precio": 205000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 2100,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "A 5 minutos de la Av. Abdón Calderón"
+  ],
+  "viasAcceso": "Calles asfaltadas, acceso vehicular",
+  "descripcion": "Lote de 2.100 m² ubicado en la parroquia Conocoto, Quito. Cuenta con todos los servicios básicos. A 5 minutos de la vía principal Abdón Calderón. Cuenta con calles asfaltadas.",
+  "fotoPrincipal": "/img/propiedades/quito-conocoto-lote/01.jpg",
+  "galeria": [
+    "/img/propiedades/quito-conocoto-lote/02.jpg",
+    "/img/propiedades/quito-conocoto-lote/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Conocoto, Quito, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lote",
+  "ordenCatalogo": 46
+}

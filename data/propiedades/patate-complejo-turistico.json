@@ -1,0 +1,46 @@
+{
+  "codigo": "00072HSA",
+  "titulo": "Complejo turístico en Patate",
+  "tipo": "local",
+  "operacion": "venta",
+  "canton": "Patate",
+  "sector": "Vía alterna Patate - Baños",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 300000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 4600,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "Piscinas",
+    "Sauna e hidromasaje",
+    "6 habitaciones de hospedaje",
+    "Canchas deportivas",
+    "Estanques para peces"
+  ],
+  "viasAcceso": "Vía alterna Patate - Baños",
+  "descripcion": "Complejo turístico ubicado a 5 minutos de Patate, en la vía alterna Patate - Baños. Cuenta con piscinas, sauna, hidromasaje, duchas con agua caliente, 6 habitaciones de hospedaje, canchas deportivas y estanques para peces como truchas o tilapias.",
+  "fotoPrincipal": "/img/propiedades/patate-complejo-turistico/01.jpg",
+  "galeria": [
+    "/img/propiedades/patate-complejo-turistico/02.jpg",
+    "/img/propiedades/patate-complejo-turistico/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Patate, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Complejo turístico",
+  "ordenCatalogo": 34
+}

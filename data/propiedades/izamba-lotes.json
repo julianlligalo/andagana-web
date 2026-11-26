@@ -1,0 +1,43 @@
+{
+  "codigo": "00084HT",
+  "titulo": "9 lotes en Izamba",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Izamba",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 48000,
+  "consultarPrecio": false,
+  "precioDesde": true,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 314,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso",
+    "Escrituras individuales"
+  ],
+  "otrasCaracteristicas": [
+    "9 lotes disponibles"
+  ],
+  "viasAcceso": "Accesos vehiculares y calles asfaltadas",
+  "descripcion": "9 lotes disponibles ubicados a tres minutos del centro de Izamba, tras la tienda Pintulac y cerca de la Av. Julio Castillo, desvío a Píllaro. Cuentan con todos los servicios básicos y accesos vehiculares. Calles asfaltadas y escrituras totalmente individuales.",
+  "fotoPrincipal": "/img/propiedades/izamba-lotes/01.jpg",
+  "galeria": [
+    "/img/propiedades/izamba-lotes/02.jpg",
+    "/img/propiedades/izamba-lotes/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Izamba, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lotización",
+  "ordenCatalogo": 37
+}

@@ -1,0 +1,42 @@
+{
+  "codigo": "00031HT",
+  "titulo": "2 lotes en Santa Rosa - Vía Antonio Clavijo",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Santa Rosa",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 35000,
+  "consultarPrecio": false,
+  "precioDesde": true,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 200,
+  "areaTerrenoTexto": "300 y 200 m²",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "2 lotes"
+  ],
+  "viasAcceso": "Vías asfaltadas",
+  "descripcion": "2 lotes en venta de 300 y 200 m² ubicados en Santa Rosa, en la vía Antonio Clavijo y vía a Guaranda, a 1 minuto del centro de Santa Rosa. Cuentan con todos los servicios básicos.",
+  "fotoPrincipal": "/img/propiedades/santa-rosa-antonio-clavijo-lotes/01.jpg",
+  "galeria": [
+    "/img/propiedades/santa-rosa-antonio-clavijo-lotes/02.jpg",
+    "/img/propiedades/santa-rosa-antonio-clavijo-lotes/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Santa Rosa, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lotes",
+  "ordenCatalogo": 9
+}

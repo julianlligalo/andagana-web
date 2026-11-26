@@ -1,0 +1,46 @@
+{
+  "codigo": "000561GS",
+  "titulo": "Edificio con locales en la vía a Cevallos",
+  "tipo": "local",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Vía a Cevallos",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 177000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 370,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 310,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": true,
+  "garajeDetalle": "Garaje para 12 vehículos",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "2 locales comerciales",
+    "2 departamentos"
+  ],
+  "viasAcceso": "Sobre la Av. Juan Montalvo",
+  "descripcion": "Propiedad ubicada en la vía a Cevallos, en la Av. Juan Montalvo y Miraflores. Consta de dos locales comerciales y dos departamentos. Amplio garaje para 12 vehículos.",
+  "fotoPrincipal": "/img/propiedades/via-a-cevallos-locales/01.jpg",
+  "galeria": [
+    "/img/propiedades/via-a-cevallos-locales/02.jpg",
+    "/img/propiedades/via-a-cevallos-locales/03.jpg",
+    "/img/propiedades/via-a-cevallos-locales/04.jpg",
+    "/img/propiedades/via-a-cevallos-locales/05.jpg",
+    "/img/propiedades/via-a-cevallos-locales/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Miraflores, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Locales y departamentos",
+  "ordenCatalogo": 27
+}

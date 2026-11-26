@@ -1,0 +1,46 @@
+{
+  "codigo": "000088EP",
+  "titulo": "Casa con garaje para 12 vehículos en La Ecuatoriana",
+  "tipo": "casa",
+  "operacion": "venta",
+  "canton": "Quito",
+  "sector": "La Ecuatoriana",
+  "provincia": "Pichincha",
+  "oficina": "quito",
+  "precio": 103000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 400,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 175.72,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": true,
+  "garajeDetalle": "Garaje para 12 vehículos",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "1 departamento",
+    "3 cuartos adicionales"
+  ],
+  "viasAcceso": "A una cuadra de la Av. Mariscal Sucre",
+  "descripcion": "Propiedad ubicada en Quito, sector La Ecuatoriana, a una cuadra de la Av. Mariscal Sucre y a 5 minutos del terminal Quitumbe. Cuenta con 1 departamento y tres cuartos adicionales. Amplio garaje para 12 vehículos. Casa con proyección.",
+  "fotoPrincipal": "/img/propiedades/quito-la-ecuatoriana-casa/01.jpg",
+  "galeria": [
+    "/img/propiedades/quito-la-ecuatoriana-casa/02.jpg",
+    "/img/propiedades/quito-la-ecuatoriana-casa/03.jpg",
+    "/img/propiedades/quito-la-ecuatoriana-casa/04.jpg",
+    "/img/propiedades/quito-la-ecuatoriana-casa/05.jpg",
+    "/img/propiedades/quito-la-ecuatoriana-casa/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "La Ecuatoriana, Quito, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa con proyección",
+  "ordenCatalogo": 47
+}

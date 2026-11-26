@@ -1,0 +1,252 @@
+# Panel de administración (Pages CMS: https://app.pagescms.org)
+# Cada propiedad es un archivo en data/propiedades/. Al guardar, GitHub
+# reduce las fotos, revisa errores y publica la página (1–2 minutos).
+
+media:
+  input: img/propiedades
+  output: /img/propiedades
+  categories: [image]
+  extensions: [jpg, jpeg, png, webp]
+  rename: safe
+
+settings:
+  # conserva los datos internos que no aparecen en el formulario (orden del catálogo, etc.)
+  content: true
+  commit:
+    identity: user
+    templates:
+      create: "Nueva propiedad: {filename} (por {userName})"
+      update: "Propiedad actualizada: {filename} (por {userName})"
+      delete: "Propiedad eliminada: {filename} (por {userName})"
+      rename: "Propiedad renombrada: {oldFilename} → {newFilename} (por {userName})"
+
+content:
+  - name: propiedades
+    label: Propiedades
+    type: collection
+    path: data/propiedades
+    format: json
+    filename:
+      template: "{titulo}-{codigo}.json"
+      field: false
+    view:
+      primary: titulo
+      fields: [titulo, codigo, estado, destacada, canton, oficina]
+      search: [titulo, codigo, canton, sector]
+      sort: [titulo, codigo, estado, canton]
+      default:
+        sort: titulo
+        order: asc
+    fields:
+      # ---------- Datos principales ----------
+      - name: codigo
+        label: Código
+        type: string
+        required: true
+        description: "Código único de la propiedad, el mismo del catálogo (ej. 00025CE). No puede repetirse."
+        pattern:
+          regex: "^[A-Za-z0-9-]{3,20}$"
+          message: "Usa solo letras, números o guiones (3 a 20 caracteres), sin espacios."
+      - name: titulo
+        label: Título
+        type: string
+        required: true
+        description: "Lo que se verá en la tarjeta. Ej.: Casa de 3 dormitorios en Ficoa"
+        options: { maxlength: 90 }
+      - name: tipo
+        label: Tipo
+        type: select
+        required: true
+        default: casa
+        options:
+          values:
+            - { name: casa, label: Casa }
+            - { name: terreno, label: Terreno / Lote }
+            - { name: departamento, label: Departamento }
+            - { name: local, label: Local }
+            - { name: casa-rentera, label: Casa rentera }
+            - { name: otro, label: Otro }
+      - name: operacion
+        label: Operación
+        type: select
+        required: true
+        default: venta
+        options:
+          values:
+            - { name: venta, label: Venta }
+            - { name: arriendo, label: Arriendo }
+
+      # ---------- Ubicación ----------
+      - name: canton
+        label: Cantón
+        type: string
+        required: true
+        description: "Ej.: Ambato, Quito, Pelileo"
+      - name: sector
+        label: Sector
+        type: string
+        description: "Barrio o sector. Ej.: Huachi Grande, Ficoa, Chillogallo"
+      - name: provincia
+        label: Provincia (opcional)
+        type: string
+        description: "Ej.: Tungurahua, Pichincha"
+      - name: oficina
+        label: Oficina responsable
+        type: select
+        required: true
+        default: ambato
+        description: "El botón de WhatsApp de esta propiedad irá al número de esta oficina."
+        options:
+          values:
+            - { name: ambato, label: "Matriz Ambato (099 267 4556)" }
+            - { name: quito, label: "Sucursal Quito (096 182 3598)" }
+      - name: mapaEnlace
+        label: Enlace de Google Maps
+        type: string
+        description: "En Google Maps busca el lugar, toca «Compartir» y pega aquí el enlace. Si lo dejas vacío, el mapa muestra el sector."
+        pattern:
+          regex: "^$|^https?://\\S+$"
+          message: "Pega un enlace completo que empiece con https://"
+
+      # ---------- Precio ----------
+      - name: precio
+        label: Precio (USD)
+        type: number
+        description: "Solo el número, sin puntos ni $. Ej.: 59000. Déjalo vacío si marcas «Consultar precio»."
+        options: { min: 0 }
+      - name: consultarPrecio
+        label: Consultar precio
+        type: boolean
+        default: false
+        description: "Actívalo si no quieres mostrar el precio. Una propiedad sin precio necesita esta opción."
+      - name: precioDesde
+        label: "Precio «desde»"
+        type: boolean
+        default: false
+        description: "Para lotizaciones o varias unidades: muestra «Desde $…»."
+      - name: precioEspecial
+        label: "Etiqueta «Precio especial»"
+        type: boolean
+        default: true
+      - name: financiamiento
+        label: "Etiqueta «Financiamiento inmediato»"
+        type: boolean
+        default: true
+
+      # ---------- Medidas y ambientes ----------
+      - name: areaTerreno
+        label: Área de terreno (m²)
+        type: number
+        description: "Solo el número. Ej.: 1142"
+        options: { min: 0 }
+      - name: areaTerrenoTexto
+        label: Área de terreno como texto (opcional)
+        type: string
+        description: "Solo si no es un único número. Ej.: 250 y 300 m². Reemplaza al número en la página."
+      - name: areaConstruccion
+        label: Área de construcción (m²)
+        type: number
+        options: { min: 0 }
+      - name: habitaciones
+        label: Habitaciones
+        type: number
+        options: { min: 0 }
+      - name: banos
+        label: Baños
+        type: number
+        options: { min: 0 }
+      - name: garaje
+        label: Garaje
+        type: boolean
+        default: false
+      - name: garajeDetalle
+        label: Detalle del garaje (opcional)
+        type: string
+        description: "Ej.: Garaje para 2 vehículos"
+
+      # ---------- Características y descripción ----------
+      - name: caracteristicas
+        label: Características
+        type: select
+        description: "Elige todas las que apliquen."
+        options:
+          multiple: true
+          values:
+            - Servicios básicos
+            - Agua potable
+            - Luz eléctrica
+            - Alcantarillado
+            - Agua de regadío
+            - Vías de acceso
+            - Vías asfaltadas
+            - Acceso vehicular
+            - Escrituras en regla
+            - Documentos en regla
+            - Escrituras individuales
+            - Cerramiento
+            - Patio
+            - Jardín
+            - Áreas verdes
+            - Terraza
+            - Bodega
+            - Lavandería
+            - Piscina
+            - Vista panorámica
+            - Local comercial
+            - Amoblado
+      - name: otrasCaracteristicas
+        label: Otras características
+        type: string
+        list: true
+        description: "Lo que no esté en la lista de arriba, una por línea. Ej.: 2 departamentos, Superficie plana"
+      - name: viasAcceso
+        label: Detalle de vías de acceso (opcional)
+        type: string
+        description: "Ej.: Vía asfaltada de 8 m, a 3 cuadras de la Panamericana"
+      - name: descripcion
+        label: Descripción
+        type: text
+        description: "Texto completo que se verá en la ficha de la propiedad."
+
+      # ---------- Fotos ----------
+      - name: fotoPrincipal
+        label: Foto principal
+        type: image
+        required: true
+        description: "La que aparece en la tarjeta. Se reduce automáticamente a 1600 px."
+      - name: galeria
+        label: Galería de fotos
+        type: image
+        description: "Puedes subir varias fotos. Se muestran en este orden después de la principal."
+        options:
+          multiple:
+            max: 40
+          unique: true
+
+      # ---------- Publicación ----------
+      - name: estado
+        label: Estado
+        type: select
+        required: true
+        default: disponible
+        description: "Reservada o Vendida muestra una franja sobre la foto."
+        options:
+          values:
+            - { name: disponible, label: Disponible }
+            - { name: reservada, label: Reservada }
+            - { name: vendida, label: Vendida }
+      - name: destacada
+        label: Destacada
+        type: boolean
+        default: false
+        description: "Las destacadas aparecen primero en la página."
+      - name: subtipo
+        label: Etiqueta corta en la foto (opcional)
+        type: string
+        description: "Reemplaza al tipo en la etiqueta de la foto. Ej.: Lotización, Casa de campo"
+
+  - name: revision
+    label: ⚠️ Revisión de errores
+    type: file
+    path: REVISION-PROPIEDADES.md
+    format: raw

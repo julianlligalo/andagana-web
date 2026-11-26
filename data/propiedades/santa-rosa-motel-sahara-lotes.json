@@ -1,0 +1,43 @@
+{
+  "codigo": "000000CA",
+  "titulo": "16 lotes en Santa Rosa - Sector Motel Sahara",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Santa Rosa",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 30000,
+  "consultarPrecio": false,
+  "precioDesde": true,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 200,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso",
+    "Escrituras individuales"
+  ],
+  "otrasCaracteristicas": [
+    "16 lotes"
+  ],
+  "viasAcceso": "Vías asfaltadas y acceso vehicular",
+  "descripcion": "16 lotes desde 200 m² en Santa Rosa, sector Motel Sahara, en la calle Pérez Pazmiño. Cuentan con todos los servicios básicos, escrituras individuales y acceso vehicular.",
+  "fotoPrincipal": "/img/propiedades/santa-rosa-motel-sahara-lotes/01.jpg",
+  "galeria": [
+    "/img/propiedades/santa-rosa-motel-sahara-lotes/02.jpg",
+    "/img/propiedades/santa-rosa-motel-sahara-lotes/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Santa Rosa, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lotización",
+  "ordenCatalogo": 10
+}

@@ -1,0 +1,43 @@
+{
+  "codigo": "000531HT",
+  "titulo": "Local comercial y departamento sector Registro Civil",
+  "tipo": "local",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Registro Civil",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 143000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 300,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 100,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": true,
+  "garajeDetalle": "Amplio garaje",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "1 local comercial",
+    "1 departamento familiar"
+  ],
+  "viasAcceso": "Vías asfaltadas",
+  "descripcion": "Propiedad de 300 m² ubicada en el sector del Registro Civil. Cuenta con 1 local comercial, 1 departamento familiar y amplio garaje. Está ubicada en las calles Antonio Clavijo y José Ortega, a dos cuadras del Paseo Shopping.",
+  "fotoPrincipal": "/img/propiedades/registro-civil-local/01.jpg",
+  "galeria": [
+    "/img/propiedades/registro-civil-local/02.jpg",
+    "/img/propiedades/registro-civil-local/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Paseo Shopping Ambato, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Local con departamento",
+  "ordenCatalogo": 35
+}

@@ -1,0 +1,47 @@
+{
+  "codigo": "000511GM",
+  "titulo": "Casa de 3 pisos sector Universidad Católica",
+  "tipo": "casa",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Universidad Católica",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 129000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 103.91,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 121.8,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "3 habitaciones con baño",
+    "Baño social",
+    "Cuarto de lavandería"
+  ],
+  "viasAcceso": "Vías asfaltadas",
+  "descripcion": "Casa unifamiliar de 3 pisos en conjunto habitacional. Consta de sala, cocina, baño social, 3 habitaciones con baño cada una y cuarto de lavandería. Excelente ubicación, a pocos minutos del Complejo Judicial, el Registro Civil y el Paseo Shopping.",
+  "fotoPrincipal": "/img/propiedades/universidad-catolica-casa/01.jpg",
+  "galeria": [
+    "/img/propiedades/universidad-catolica-casa/02.jpg",
+    "/img/propiedades/universidad-catolica-casa/03.jpg",
+    "/img/propiedades/universidad-catolica-casa/04.jpg",
+    "/img/propiedades/universidad-catolica-casa/05.jpg",
+    "/img/propiedades/universidad-catolica-casa/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Pontificia Universidad Católica del Ecuador Sede Ambato, Ambato, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa en conjunto",
+  "ordenCatalogo": 16
+}

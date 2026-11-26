@@ -33,6 +33,8 @@
     monedas: '<ellipse cx="9" cy="6" rx="6" ry="2.5"/><path d="M3 6v4c0 1.4 2.7 2.5 6 2.5M3 10v4c0 1.4 2.7 2.5 6 2.5M3 14v4c0 1.4 2.7 2.5 6 2.5M15 6v2"/><circle cx="16.5" cy="15.5" r="5"/><path d="M18 13.6c-.4-.4-1-.6-1.6-.6-.9 0-1.6.5-1.6 1.2 0 1.6 3.3.8 3.3 2.5 0 .7-.7 1.2-1.7 1.2-.7 0-1.3-.3-1.7-.7M16.5 12.2v1M16.5 18v1"/>',
     banco: '<path d="M3 9.5 12 4l9 5.5"/><path d="M4 9.5h16"/><path d="M6 12v5M10 12v5M14 12v5M18 12v5"/><path d="M4 17.5h16M3 20.5h18"/>',
     manoDinero: '<circle cx="15" cy="7" r="4.2"/><path d="M15.9 5.4c-.3-.3-.7-.4-1.1-.4-.6 0-1.1.3-1.1.8 0 1.1 2.4.5 2.4 1.7 0 .5-.5.9-1.2.9-.5 0-.9-.2-1.2-.5M15 4v.9M15 9.1v.9"/><path d="M2 14h3l4.5-1.5c.9-.3 1.8.1 2.1.9.2.6-.1 1.2-.7 1.5L8.5 16"/><path d="M5 20l3.5-1.5h5.5c.8 0 1.5-.3 2-.8L21 13c.5-.6.4-1.4-.2-1.8-.5-.3-1.2-.3-1.7.1L15 14.5"/><path d="M2 14v6h3"/>',
+    cama: '<path d="M3 18V7M3 13h18v5M21 18v-3a3 3 0 0 0-3-3h-7v1"/><circle cx="7" cy="10.5" r="1.8"/>',
+    bano: '<path d="M4 12h16v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M6 12V6a2 2 0 0 1 3.5-1.3"/><path d="M8 19l-1 2M16 19l1 2"/>',
     citas: '<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="m9 15 2 2 4-4"/>'
   };
   const MARCAS = {
@@ -52,15 +54,20 @@
   function dinero(n) { return "$" + new Intl.NumberFormat("es-EC", { maximumFractionDigits: 0 }).format(n).replace(/,/g, "."); }
   function m2(n) { return fmtNum.format(n) + " m²"; }
 
+  const sinPrecio = p => p.consultarPrecio || p.precio == null;
   function precioHTML(p, conDesde) {
-    if (p.precioTexto) return p.precioTexto;
-    if (p.precio == null) return "Consultar precio";
-    return (conDesde && p.precioDesde ? "<small>Desde</small>" : "") + dinero(p.precio);
+    if (sinPrecio(p)) return "Consultar precio";
+    return (conDesde && p.precioDesde ? "<small>Desde</small>" : "") + dinero(p.precio) +
+      (p.operacion === "arriendo" ? "<small> /mes</small>" : "");
   }
   function precioPlano(p) {
-    if (p.precioTexto) return p.precioTexto;
-    if (p.precio == null) return "Consultar precio";
-    return (p.precioDesde ? "Desde " : "") + dinero(p.precio);
+    if (sinPrecio(p)) return "Consultar precio";
+    return (p.precioDesde ? "Desde " : "") + dinero(p.precio) + (p.operacion === "arriendo" ? " al mes" : "");
+  }
+  const ESTADOS = { reservada: "Reservada", vendida: "Vendida" };
+  function oficinaDe(p) {
+    const ofs = (window.ANDAGANA || {}).oficinas || [];
+    return ofs.find(o => o.id === (p && p.oficina)) || ofs[0] || null;
   }
   function areaTerrenoTexto(p) {
     if (p.areaTerrenoTexto) return p.areaTerrenoTexto;
@@ -72,8 +79,12 @@
     casa: { nombre: "Casa", plural: "Casas" },
     terreno: { nombre: "Terreno", plural: "Terrenos" },
     departamento: { nombre: "Departamento", plural: "Departamentos" },
-    local: { nombre: "Local", plural: "Locales" }
+    local: { nombre: "Local", plural: "Locales" },
+    "casa-rentera": { nombre: "Casa rentera", plural: "Casas renteras", icono: "departamento" },
+    otro: { nombre: "Otro", plural: "Otros", icono: "todos" }
   };
+  const iconoTipo = t => (TIPOS[t] && TIPOS[t].icono) || t;
+  const nombreTipo = t => (TIPOS[t] || TIPOS.otro).nombre;
 
   function foto(p, i) {
     const f = (p.fotos || [])[i || 0];
@@ -98,12 +109,17 @@
       // mensaje personalizado (por ejemplo, "Agenda tu cita")
     } else if (p) {
       const cod = p.codigo ? "con código *" + p.codigo + "*" : "(sin código)";
-      msg = "Hola Andagana Corporación, me interesa la propiedad " + cod + ": " + p.titulo +
-        " (" + ubicacion(p) + "), " + precioPlano(p) + ". ¿Me pueden dar más información sobre el financiamiento?";
+      msg = p.estado === "vendida"
+        ? "Hola Andagana Corporación, vi la propiedad " + cod + ": " + p.titulo + " (" + ubicacion(p) + "), que ya está vendida. ¿Tienen algo similar?"
+        : "Hola Andagana Corporación, me interesa la propiedad " + cod + ": " + p.titulo +
+          " (" + ubicacion(p) + "), " + precioPlano(p) + ". ¿Me pueden dar más información sobre el financiamiento?";
     } else {
       msg = "Hola Andagana Corporación, me gustaría recibir información sobre sus propiedades y el financiamiento inmediato.";
     }
-    return "https://wa.me/" + (cfg.whatsapp || "593992674556") + "?text=" + encodeURIComponent(msg);
+    // cada propiedad escribe al WhatsApp de su oficina; el resto, al número principal
+    const of = p ? oficinaDe(p) : null;
+    const numero = (of && of.whatsapp) || cfg.whatsapp || "593992674556";
+    return "https://wa.me/" + numero + "?text=" + encodeURIComponent(msg);
   }
 
   // ---------- Oficinas ----------
@@ -143,16 +159,20 @@
   // ---------- Tarjeta de propiedad ----------
   function tarjeta(p) {
     const area = areaTerrenoTexto(p);
-    return '<a class="tarjeta aparecer" href="propiedad.html?id=' + encodeURIComponent(p.id) + '">' +
+    const estado = ESTADOS[p.estado];
+    return '<a class="tarjeta aparecer' + (estado ? " estado-" + p.estado : "") + (p.destacada ? " destacada" : "") + '" href="propiedad.html?id=' + encodeURIComponent(p.id) + '">' +
       '<div class="tarjeta-foto">' +
         '<img src="' + esc(foto(p, 0)) + '" alt="' + esc(p.titulo) + '" loading="lazy">' +
-        '<span class="etiqueta-fin">' + icono("rayo") + "Financiamiento inmediato</span>" +
-        '<span class="etiqueta-tipo">' + esc(p.subtipo || TIPOS[p.tipo].nombre) + "</span>" +
+        (estado ? '<span class="franja-estado estado-' + p.estado + '">' + estado + "</span>" : "") +
+        (p.financiamiento !== false && !estado ? '<span class="etiqueta-fin">' + icono("rayo") + "Financiamiento inmediato</span>" : "") +
+        (p.destacada ? '<span class="etiqueta-destacada">★ Destacada</span>' : "") +
+        '<span class="etiqueta-tipo">' + esc(p.subtipo || nombreTipo(p.tipo)) + (p.operacion === "arriendo" ? " · Arriendo" : "") + "</span>" +
         '<span class="tarjeta-fotos-num">' + icono("camara") + (p.fotos || []).length + "</span>" +
       "</div>" +
       '<div class="tarjeta-cuerpo">' +
         '<div class="tarjeta-ubicacion">' + icono("ubicacion") + esc(ubicacion(p)) + "</div>" +
         "<h3>" + esc(p.titulo) + "</h3>" +
+        (p.precioEspecial !== false && !sinPrecio(p) && !estado ? '<div class="tarjeta-precio-etq">Precio especial</div>' : "") +
         '<div class="tarjeta-precio">' + precioHTML(p, true) + "</div>" +
         '<div class="tarjeta-datos">' +
           (area ? "<span title=\"Área de terreno\">" + icono("area") + esc(area) + "</span>" : "") +
@@ -182,5 +202,5 @@
     document.querySelectorAll("[data-anio]").forEach(el => { el.textContent = new Date().getFullYear(); });
   }
 
-  window.AG = { icono, dinero, m2, precioHTML, precioPlano, areaTerrenoTexto, TIPOS, foto, esc, ubicacion, whatsappURL, tarjeta, iniciarComun };
+  window.AG = { icono, dinero, m2, precioHTML, precioPlano, sinPrecio, areaTerrenoTexto, TIPOS, iconoTipo, nombreTipo, ESTADOS, oficinaDe, foto, esc, ubicacion, whatsappURL, tarjeta, iniciarComun };
 })();

@@ -1,0 +1,46 @@
+{
+  "codigo": "00005EP",
+  "titulo": "Casa unifamiliar en Caupicho",
+  "tipo": "casa",
+  "operacion": "venta",
+  "canton": "Quito",
+  "sector": "Caupicho",
+  "provincia": "Pichincha",
+  "oficina": "quito",
+  "precio": 60000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 200,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 208,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "3 dormitorios",
+    "Departamento completo"
+  ],
+  "viasAcceso": "A una cuadra de la Av. Leonidas Dubles",
+  "descripcion": "Casa unifamiliar de 208 m² de construcción y 200 m² de terreno. Cuenta con un departamento completo con cocina, sala y baño. Está ubicada en el sector de Caupicho, en las calles E53 y E3J, a una cuadra de la vía principal Leonidas Dubles.",
+  "fotoPrincipal": "/img/propiedades/quito-caupicho-casa/01.jpg",
+  "galeria": [
+    "/img/propiedades/quito-caupicho-casa/02.jpg",
+    "/img/propiedades/quito-caupicho-casa/03.jpg",
+    "/img/propiedades/quito-caupicho-casa/04.jpg",
+    "/img/propiedades/quito-caupicho-casa/05.jpg",
+    "/img/propiedades/quito-caupicho-casa/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Caupicho, Quito, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa unifamiliar",
+  "ordenCatalogo": 50
+}

@@ -1,0 +1,47 @@
+{
+  "codigo": "00056DM",
+  "titulo": "2 terrenos con casa rentera en Huachi Grande",
+  "tipo": "casa-rentera",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Huachi Grande",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 71000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 526,
+  "areaTerrenoTexto": "526 m² y 724 m²",
+  "areaConstruccion": 160,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "1 departamento de 3 habitaciones",
+    "1 minidepartamento",
+    "2 terrenos"
+  ],
+  "viasAcceso": "Acceso vehicular",
+  "descripcion": "Dos terrenos de 526 m² y 724 m². El primer terreno cuenta con una casa rentera de 1 departamento con 3 habitaciones y un minidepartamento, con un área de construcción de 160 m². Cuentan con acceso vehicular y todos los servicios básicos.",
+  "fotoPrincipal": "/img/propiedades/huachi-grande-casa-rentera/01.jpg",
+  "galeria": [
+    "/img/propiedades/huachi-grande-casa-rentera/02.jpg",
+    "/img/propiedades/huachi-grande-casa-rentera/03.jpg",
+    "/img/propiedades/huachi-grande-casa-rentera/04.jpg",
+    "/img/propiedades/huachi-grande-casa-rentera/05.jpg",
+    "/img/propiedades/huachi-grande-casa-rentera/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Huachi Grande, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa rentera",
+  "ordenCatalogo": 21
+}

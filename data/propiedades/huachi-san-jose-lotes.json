@@ -1,0 +1,42 @@
+{
+  "codigo": "00069HT",
+  "titulo": "27 lotes en Huachi Grande - San José",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Huachi Grande",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 14000,
+  "consultarPrecio": false,
+  "precioDesde": true,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 200,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "27 lotes de 200 m²"
+  ],
+  "viasAcceso": "Acceso vehicular, zona urbana",
+  "descripcion": "27 lotes de terreno de 200 m² con acceso vehicular, ubicados en la Av. Manuela Sáenz, sector Huachi San José.",
+  "fotoPrincipal": "/img/propiedades/huachi-san-jose-lotes/01.jpg",
+  "galeria": [
+    "/img/propiedades/huachi-san-jose-lotes/02.jpg",
+    "/img/propiedades/huachi-san-jose-lotes/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Huachi San José, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lotización",
+  "ordenCatalogo": 24
+}

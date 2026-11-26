@@ -1,0 +1,47 @@
+{
+  "codigo": "000041HT",
+  "titulo": "Casa con 2 locales comerciales en Pelileo",
+  "tipo": "local",
+  "operacion": "venta",
+  "canton": "Pelileo",
+  "sector": "Estadio",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 145000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 295,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 386,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "2 locales comerciales",
+    "1 departamento",
+    "1 minidepartamento"
+  ],
+  "viasAcceso": "Vías asfaltadas",
+  "descripcion": "Casa ubicada en Pelileo. Cuenta con 2 locales comerciales, 1 departamento y 1 minidepartamento. Su área de terreno es de 295 m² y su área de construcción es de 386 m². Está a pocos pasos del Estadio de Pelileo y a 3 cuadras del centro.",
+  "fotoPrincipal": "/img/propiedades/pelileo-locales-estadio/01.jpg",
+  "galeria": [
+    "/img/propiedades/pelileo-locales-estadio/02.jpg",
+    "/img/propiedades/pelileo-locales-estadio/03.jpg",
+    "/img/propiedades/pelileo-locales-estadio/04.jpg",
+    "/img/propiedades/pelileo-locales-estadio/05.jpg",
+    "/img/propiedades/pelileo-locales-estadio/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Estadio Cantonal Pelileo, Pelileo, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa con locales",
+  "ordenCatalogo": 13
+}

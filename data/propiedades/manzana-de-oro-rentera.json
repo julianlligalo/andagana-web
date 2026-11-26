@@ -1,0 +1,47 @@
+{
+  "codigo": "00007HT",
+  "titulo": "Propiedad rentera en Manzana de Oro",
+  "tipo": "casa-rentera",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Manzana de Oro",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 78900,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 280,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 250,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": true,
+  "garajeDetalle": "Garaje",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso",
+    "Lavandería"
+  ],
+  "otrasCaracteristicas": [
+    "3 departamentos (2 en obra gris)",
+    "Área para especies menores"
+  ],
+  "viasAcceso": "Av. Manzana de Oro",
+  "descripcion": "Propiedad rentera de tres pisos ubicada en la Av. Manzana de Oro y calle José Salinas, a pocos pasos del Camino El Rey. Cuenta con 3 departamentos (2 en obra gris), garaje, lavandería y área para especies menores.",
+  "fotoPrincipal": "/img/propiedades/manzana-de-oro-rentera/01.jpg",
+  "galeria": [
+    "/img/propiedades/manzana-de-oro-rentera/02.jpg",
+    "/img/propiedades/manzana-de-oro-rentera/03.jpg",
+    "/img/propiedades/manzana-de-oro-rentera/04.jpg",
+    "/img/propiedades/manzana-de-oro-rentera/05.jpg",
+    "/img/propiedades/manzana-de-oro-rentera/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Manzana de Oro, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Propiedad rentera",
+  "ordenCatalogo": 38
+}

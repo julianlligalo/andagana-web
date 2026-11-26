@@ -1,0 +1,45 @@
+{
+  "codigo": "000012HT",
+  "titulo": "Casa unifamiliar en Pelileo",
+  "tipo": "casa",
+  "operacion": "venta",
+  "canton": "Pelileo",
+  "sector": "Centro",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 220000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 224,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 450,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": true,
+  "garajeDetalle": "Amplio garaje",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "6 habitaciones"
+  ],
+  "viasAcceso": "Vías asfaltadas",
+  "descripcion": "Casa unifamiliar ubicada en Pelileo, a dos minutos del centro, del mercado Argentina y del mercado 10 de Agosto, y cerca del redondel que conecta Pelileo - Baños y Pelileo - Patate. Cuenta con 6 habitaciones y amplio garaje.",
+  "fotoPrincipal": "/img/propiedades/pelileo-casa-unifamiliar/01.jpg",
+  "galeria": [
+    "/img/propiedades/pelileo-casa-unifamiliar/02.jpg",
+    "/img/propiedades/pelileo-casa-unifamiliar/03.jpg",
+    "/img/propiedades/pelileo-casa-unifamiliar/04.jpg",
+    "/img/propiedades/pelileo-casa-unifamiliar/05.jpg",
+    "/img/propiedades/pelileo-casa-unifamiliar/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Mercado 10 de Agosto, Pelileo, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa unifamiliar",
+  "ordenCatalogo": 1
+}

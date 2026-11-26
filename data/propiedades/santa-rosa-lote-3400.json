@@ -1,0 +1,41 @@
+{
+  "codigo": "000001DG",
+  "titulo": "Lote de 3.400 m² en Santa Rosa",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Santa Rosa",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 115000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 3400,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso",
+    "Agua de regadío"
+  ],
+  "otrasCaracteristicas": [],
+  "viasAcceso": "Varios accesos vehiculares",
+  "descripcion": "Lote de 3.400 m² ubicado en Santa Rosa, a 1 minuto de la vía Ambato, cerca de la plaza de hierbas y del estadio Las Carmelitas. Cuenta con todos los servicios básicos, agua de regadío y varios accesos vehiculares.",
+  "fotoPrincipal": "/img/propiedades/santa-rosa-lote-3400/01.jpg",
+  "galeria": [
+    "/img/propiedades/santa-rosa-lote-3400/02.jpg",
+    "/img/propiedades/santa-rosa-lote-3400/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Santa Rosa, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lote",
+  "ordenCatalogo": 42
+}

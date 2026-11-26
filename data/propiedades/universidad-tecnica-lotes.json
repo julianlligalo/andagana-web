@@ -1,0 +1,45 @@
+{
+  "codigo": "000501HT",
+  "titulo": "3 lotes junto a la Universidad Técnica",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Universidad Técnica",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 95000,
+  "consultarPrecio": false,
+  "precioDesde": true,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 254,
+  "areaTerrenoTexto": "254, 257 y 301 m²",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso",
+    "Escrituras individuales"
+  ],
+  "otrasCaracteristicas": [
+    "Lote 17: 301 m²",
+    "Lote 19: 257 m²",
+    "Lote 20: 254 m²"
+  ],
+  "viasAcceso": "Av. Tnt. Gregorio Escobedo y calle La Valle",
+  "descripcion": "Tres lotes en venta ubicados en la Av. Tnt. Gregorio Escobedo y calle La Valle, a dos minutos de la UTA. Lote 17 de 301 m², lote 19 de 257 m² y lote 20 de 254 m². Sector privilegiado con todos los servicios básicos y escrituras individuales.",
+  "fotoPrincipal": "/img/propiedades/universidad-tecnica-lotes/01.jpg",
+  "galeria": [
+    "/img/propiedades/universidad-tecnica-lotes/02.jpg",
+    "/img/propiedades/universidad-tecnica-lotes/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Universidad Técnica de Ambato, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lotes",
+  "ordenCatalogo": 36
+}

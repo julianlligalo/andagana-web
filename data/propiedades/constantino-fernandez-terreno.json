@@ -1,0 +1,42 @@
+{
+  "codigo": "000511DG",
+  "titulo": "Terreno plano en Constantino Fernández",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Constantino Fernández",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 125000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 5973,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "Superficie totalmente plana"
+  ],
+  "viasAcceso": "2 accesos vehiculares",
+  "descripcion": "Terreno de 5.973 m² ubicado en la parroquia Constantino Fernández, tras el estadio central y a dos minutos del centro parroquial. Superficie totalmente plana con 2 accesos vehiculares y todos los servicios básicos.",
+  "fotoPrincipal": "/img/propiedades/constantino-fernandez-terreno/01.jpg",
+  "galeria": [
+    "/img/propiedades/constantino-fernandez-terreno/02.jpg",
+    "/img/propiedades/constantino-fernandez-terreno/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Constantino Fernández, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Terreno",
+  "ordenCatalogo": 15
+}

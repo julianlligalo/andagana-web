@@ -1,7 +1,7 @@
 /* Página de inicio: listado y filtros */
 (function () {
   "use strict";
-  const { icono, tarjeta, TIPOS, esc, iniciarComun } = window.AG;
+  const { icono, tarjeta, TIPOS, iconoTipo, sinPrecio, esc, iniciarComun } = window.AG;
   const TODAS = (window.PROPIEDADES || []).slice();
   const $ = id => document.getElementById(id);
 
@@ -13,7 +13,9 @@
   // ---------- Botones de tipo ----------
   function pintarTipos() {
     const base = filtrar(Object.assign({}, estado, { tipo: "" }));
-    const opciones = [["", "Todos", "todos"]].concat(Object.keys(TIPOS).map(k => [k, TIPOS[k].plural, k]));
+    // solo los tipos que tienen alguna propiedad publicada
+    const conDatos = Object.keys(TIPOS).filter(k => TODAS.some(p => p.tipo === k));
+    const opciones = [["", "Todos", "todos"]].concat(conDatos.map(k => [k, TIPOS[k].plural, iconoTipo(k)]));
     $("filtro-tipos").innerHTML = opciones.map(([val, txt, ic]) => {
       const n = val ? base.filter(p => p.tipo === val).length : base.length;
       return '<button type="button" class="chip" data-tipo="' + val + '" aria-pressed="' + (estado.tipo === val) + '">' +
@@ -49,8 +51,8 @@
       if (f.tipo && p.tipo !== f.tipo) return false;
       if (f.canton && p.canton !== f.canton) return false;
       if (f.sector && p.sector !== f.sector) return false;
-      if (pmin != null && (p.precio == null || p.precio < pmin)) return false;
-      if (pmax != null && (p.precio == null || p.precio > pmax)) return false;
+      if (pmin != null && (sinPrecio(p) || p.precio < pmin)) return false;
+      if (pmax != null && (sinPrecio(p) || p.precio > pmax)) return false;
       if (amin != null && (p.areaTerreno == null || p.areaTerreno < amin)) return false;
       if (amax != null && (p.areaTerreno == null || p.areaTerreno > amax)) return false;
       if (q) {
@@ -62,10 +64,14 @@
   }
   function ordenar(lista) {
     const val = (v, alto) => (v == null ? (alto ? Infinity : -Infinity) : v);
-    const l = lista.slice();
+    const precio = p => (sinPrecio(p) ? null : p.precio);
+    // Recomendadas: destacadas primero, luego disponibles, reservadas y vendidas;
+    // dentro de cada grupo, las nuevas (sin orden de catálogo) y luego el orden del catálogo.
+    const peso = p => (p.destacada ? 0 : 10) + ({ disponible: 0, reservada: 1, vendida: 2 }[p.estado] || 0);
+    const l = lista.slice().sort((a, b) => peso(a) - peso(b) || val(a.orden, false) - val(b.orden, false));
     switch (estado.orden) {
-      case "precio-asc": l.sort((a, b) => val(a.precio, true) - val(b.precio, true)); break;
-      case "precio-desc": l.sort((a, b) => val(b.precio) - val(a.precio)); break;
+      case "precio-asc": l.sort((a, b) => val(precio(a), true) - val(precio(b), true)); break;
+      case "precio-desc": l.sort((a, b) => val(precio(b)) - val(precio(a))); break;
       case "area-desc": l.sort((a, b) => val(b.areaTerreno) - val(a.areaTerreno)); break;
       case "area-asc": l.sort((a, b) => val(a.areaTerreno, true) - val(b.areaTerreno, true)); break;
     }

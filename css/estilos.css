@@ -629,3 +629,29 @@ button, input, select { font: inherit; color: inherit; }
 .pie-oficina strong { color: var(--white); font-size: .92rem; }
 @media (max-width: 900px) { .pie-grid { grid-template-columns: 1fr; } .pie-marca { grid-column: auto; } }
 @media (max-width: 600px) { .pie-oficinas-lista { grid-template-columns: 1fr; } }
+/* ---------- Estado (Reservada / Vendida) y destacadas ---------- */
+.franja-estado {
+  position: absolute; z-index: 3; top: 22px; left: -46px; width: 180px; transform: rotate(-45deg);
+  text-align: center; padding: .4rem 0; color: #fff; pointer-events: none;
+  font-family: var(--font-head); font-weight: 800; font-size: .8rem; letter-spacing: .18em; text-transform: uppercase;
+  background: var(--estado-color, #b3261e); box-shadow: 0 4px 14px -4px rgba(0,0,0,.55);
+  border-block: 1px solid rgba(255,255,255,.35);
+}
+.franja-estado.grande { top: 34px; left: -62px; width: 250px; font-size: 1rem; padding: .55rem 0; }
+.estado-vendida { --estado-color: #b3261e; }
+.estado-reservada { --estado-color: #a87b1f; }
+.tarjeta.estado-vendida .tarjeta-foto img { filter: grayscale(.55) brightness(.9); }
+.tarjeta.estado-vendida .tarjeta-precio { color: var(--silver-500); text-decoration: line-through; text-decoration-thickness: 2px; }
+.etiqueta-destacada {
+  position: absolute; left: .8rem; bottom: .8rem; z-index: 2;
+  background: var(--gold-grad); color: var(--navy-950); font-size: .72rem; font-weight: 800; letter-spacing: .05em;
+  text-transform: uppercase; padding: .32rem .7rem; border-radius: 999px; box-shadow: 0 4px 12px -4px rgba(0,0,0,.45);
+}
+.tarjeta.destacada { border-color: var(--gold-500); box-shadow: 0 0 0 1px var(--gold-500), 0 8px 24px -14px rgba(168,134,74,.8); }
+.tarjeta-precio-etq { font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-700); margin-bottom: -.35rem; }
+.pill-dorado { background: var(--gold-grad); color: var(--navy-950); }
+.pill-estado { background: var(--estado-color); color: #fff; letter-spacing: .12em; text-transform: uppercase; }
+.aviso-estado {
+  margin: -.2rem 0 .9rem; padding: .7rem .85rem; border-radius: 12px; font-size: .9rem; line-height: 1.4;
+  background: rgba(255,255,255,.1); border-left: 4px solid var(--estado-color); color: var(--white);
+}

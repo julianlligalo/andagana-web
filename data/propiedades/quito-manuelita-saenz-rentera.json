@@ -1,0 +1,47 @@
+{
+  "codigo": "000871EP",
+  "titulo": "Casa rentera en la Manuelita Sáenz",
+  "tipo": "casa-rentera",
+  "operacion": "venta",
+  "canton": "Quito",
+  "sector": "Manuelita Sáenz",
+  "provincia": "Pichincha",
+  "oficina": "quito",
+  "precio": 88000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 315.19,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 270,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "1 departamento",
+    "3 minidepartamentos",
+    "1 local comercial"
+  ],
+  "viasAcceso": "Calles Oe9A y S54B, línea de buses",
+  "descripcion": "Casa rentera ubicada en el sector de la Manuelita Sáenz - Quito, cerca del Camal Metropolitano, en las calles Oe9A y S54B. Cuenta con 1 departamento, 3 minidepartamentos y un local comercial. Cuenta con línea de buses y está cerca de todo lo que necesitas.",
+  "fotoPrincipal": "/img/propiedades/quito-manuelita-saenz-rentera/01.jpg",
+  "galeria": [
+    "/img/propiedades/quito-manuelita-saenz-rentera/02.jpg",
+    "/img/propiedades/quito-manuelita-saenz-rentera/03.jpg",
+    "/img/propiedades/quito-manuelita-saenz-rentera/04.jpg",
+    "/img/propiedades/quito-manuelita-saenz-rentera/05.jpg",
+    "/img/propiedades/quito-manuelita-saenz-rentera/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Manuelita Sáenz, Quito, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa rentera",
+  "ordenCatalogo": 48
+}

@@ -1,0 +1,46 @@
+{
+  "codigo": "000051EP",
+  "titulo": "Casa rentera de 4 pisos en La Mena 2",
+  "tipo": "casa-rentera",
+  "operacion": "venta",
+  "canton": "Quito",
+  "sector": "La Mena 2",
+  "provincia": "Pichincha",
+  "oficina": "quito",
+  "precio": 155000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 72,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 237.36,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "2 departamentos",
+    "1 minidepartamento"
+  ],
+  "viasAcceso": "Calle José Peralta",
+  "descripcion": "Casa rentera de 4 pisos ubicada en el sector de La Mena 2, cerca de la calle José Peralta. A pocos minutos del Centro Comercial El Recreo y del Hospital del IESS Sur.",
+  "fotoPrincipal": "/img/propiedades/quito-la-mena-2-rentera-6-pisos/01.jpg",
+  "galeria": [
+    "/img/propiedades/quito-la-mena-2-rentera-6-pisos/02.jpg",
+    "/img/propiedades/quito-la-mena-2-rentera-6-pisos/03.jpg",
+    "/img/propiedades/quito-la-mena-2-rentera-6-pisos/04.jpg",
+    "/img/propiedades/quito-la-mena-2-rentera-6-pisos/05.jpg",
+    "/img/propiedades/quito-la-mena-2-rentera-6-pisos/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "La Mena 2, Quito, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa rentera",
+  "ordenCatalogo": 51
+}

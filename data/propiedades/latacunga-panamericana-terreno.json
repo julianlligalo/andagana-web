@@ -1,0 +1,43 @@
+{
+  "codigo": "000221CA",
+  "titulo": "Terreno en la Panamericana E35, Latacunga",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Latacunga",
+  "sector": "Chan - Panamericana E35",
+  "provincia": "Cotopaxi",
+  "oficina": "ambato",
+  "precio": 132000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 4400,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "Línea de buses urbanos",
+    "Calles asfaltadas"
+  ],
+  "viasAcceso": "Vía principal Panamericana E35",
+  "descripcion": "Propiedad ubicada en Latacunga, en la Panamericana E35, sector Chan. Su área de terreno es de 4.400 m². Cuenta con todos los servicios básicos, línea de buses urbanos y calles asfaltadas.",
+  "fotoPrincipal": "/img/propiedades/latacunga-panamericana-terreno/01.jpg",
+  "galeria": [
+    "/img/propiedades/latacunga-panamericana-terreno/02.jpg",
+    "/img/propiedades/latacunga-panamericana-terreno/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Chan, Latacunga, Cotopaxi, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Terreno",
+  "ordenCatalogo": 28
+}

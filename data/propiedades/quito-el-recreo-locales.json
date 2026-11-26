@@ -1,0 +1,44 @@
+{
+  "codigo": "000561EP",
+  "titulo": "Casa rentera con 3 locales en El Recreo",
+  "tipo": "casa-rentera",
+  "operacion": "venta",
+  "canton": "Quito",
+  "sector": "El Recreo",
+  "provincia": "Pichincha",
+  "oficina": "quito",
+  "precio": 175000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 260,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 244,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "3 locales comerciales",
+    "2 departamentos",
+    "Línea de buses y Ecovía"
+  ],
+  "viasAcceso": "A una cuadra de la Av. Vicente Maldonado",
+  "descripcion": "Casa rentera con dos departamentos y tres locales comerciales. Ubicada en las calles José Peralta y Palmira, a dos minutos del Centro Comercial El Recreo. A una cuadra de la Av. Vicente Maldonado, línea de buses y Ecovía.",
+  "fotoPrincipal": "/img/propiedades/quito-el-recreo-locales/01.jpg",
+  "galeria": [
+    "/img/propiedades/quito-el-recreo-locales/02.jpg",
+    "/img/propiedades/quito-el-recreo-locales/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Centro Comercial El Recreo, Quito, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa rentera",
+  "ordenCatalogo": 44
+}

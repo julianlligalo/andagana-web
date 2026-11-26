@@ -1,0 +1,46 @@
+{
+  "codigo": "000001CA",
+  "titulo": "Casa de campo con amplio terreno en Montalvo",
+  "tipo": "casa",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Montalvo",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 110000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 5004.23,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 61.11,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": true,
+  "garajeDetalle": "Amplio garaje",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso",
+    "Áreas verdes"
+  ],
+  "otrasCaracteristicas": [
+    "Ex complejo turístico"
+  ],
+  "viasAcceso": "Vía Euclides Núñez",
+  "descripcion": "Casa de campo con amplio terreno ubicada a 3 minutos del centro de la parroquia Montalvo, con una casa unifamiliar ex complejo turístico. Cuenta con áreas verdes y amplio garaje. Área de terreno de 5.004 m² y área de construcción de 61,11 m².",
+  "fotoPrincipal": "/img/propiedades/montalvo-casa-de-campo/01.jpg",
+  "galeria": [
+    "/img/propiedades/montalvo-casa-de-campo/02.jpg",
+    "/img/propiedades/montalvo-casa-de-campo/03.jpg",
+    "/img/propiedades/montalvo-casa-de-campo/04.jpg",
+    "/img/propiedades/montalvo-casa-de-campo/05.jpg",
+    "/img/propiedades/montalvo-casa-de-campo/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Montalvo, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa de campo",
+  "ordenCatalogo": 41
+}

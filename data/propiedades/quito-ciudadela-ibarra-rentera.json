@@ -1,0 +1,47 @@
+{
+  "codigo": "000071CT",
+  "titulo": "Casa rentera en Ciudadela Ibarra",
+  "tipo": "casa-rentera",
+  "operacion": "venta",
+  "canton": "Quito",
+  "sector": "Ciudadela Ibarra",
+  "provincia": "Pichincha",
+  "oficina": "quito",
+  "precio": 185000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 180,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 160,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "1 local comercial",
+    "3 departamentos",
+    "Proyección para tercer piso"
+  ],
+  "viasAcceso": "Vías asfaltadas",
+  "descripcion": "Casa rentera en venta en Quito, sector Ciudadela Ibarra. Cuenta con 1 local comercial, 1 departamento de 2 habitaciones, 2 departamentos de 3 habitaciones, 1 cuarto de máquinas y proyección para un tercer piso.",
+  "fotoPrincipal": "/img/propiedades/quito-ciudadela-ibarra-rentera/01.jpg",
+  "galeria": [
+    "/img/propiedades/quito-ciudadela-ibarra-rentera/02.jpg",
+    "/img/propiedades/quito-ciudadela-ibarra-rentera/03.jpg",
+    "/img/propiedades/quito-ciudadela-ibarra-rentera/04.jpg",
+    "/img/propiedades/quito-ciudadela-ibarra-rentera/05.jpg",
+    "/img/propiedades/quito-ciudadela-ibarra-rentera/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Ciudadela Ibarra, Quito, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa rentera",
+  "ordenCatalogo": 56
+}

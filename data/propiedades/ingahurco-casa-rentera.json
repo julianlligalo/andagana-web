@@ -1,0 +1,47 @@
+{
+  "codigo": "0000CA",
+  "titulo": "Casa rentera con local en Ingahurco",
+  "tipo": "casa-rentera",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Ingahurco",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 285000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 102,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 121,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "1 local comercial",
+    "1 departamento",
+    "1 bodega"
+  ],
+  "viasAcceso": "Vías asfaltadas",
+  "descripcion": "Casa rentera ubicada en el sector de Ingahurco, a dos cuadras de la Unidad Educativa Sagrada Familia y de Coral Hipermercados. Consta de 1 local comercial, 1 bodega y 1 departamento.",
+  "fotoPrincipal": "/img/propiedades/ingahurco-casa-rentera/01.jpg",
+  "galeria": [
+    "/img/propiedades/ingahurco-casa-rentera/02.jpg",
+    "/img/propiedades/ingahurco-casa-rentera/03.jpg",
+    "/img/propiedades/ingahurco-casa-rentera/04.jpg",
+    "/img/propiedades/ingahurco-casa-rentera/05.jpg",
+    "/img/propiedades/ingahurco-casa-rentera/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Ingahurco, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa rentera",
+  "ordenCatalogo": 20
+}

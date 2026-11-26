@@ -1,0 +1,46 @@
+{
+  "codigo": "0000CA",
+  "titulo": "Casa de 4 dormitorios en Pinllo",
+  "tipo": "casa",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Pinllo",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": null,
+  "consultarPrecio": true,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 365.26,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 183.8,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": true,
+  "garajeDetalle": "Garaje para 3 vehículos",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "4 dormitorios",
+    "3 baños"
+  ],
+  "viasAcceso": "Acceso vehicular",
+  "descripcion": "Casa unifamiliar con 4 dormitorios, sala, cocina, comedor y 3 baños, ubicada en Pinllo, en la vía Ambato - Quisapincha. Amplio garaje para 3 vehículos.",
+  "fotoPrincipal": "/img/propiedades/pinllo-casa/01.jpg",
+  "galeria": [
+    "/img/propiedades/pinllo-casa/02.jpg",
+    "/img/propiedades/pinllo-casa/03.jpg",
+    "/img/propiedades/pinllo-casa/04.jpg",
+    "/img/propiedades/pinllo-casa/05.jpg",
+    "/img/propiedades/pinllo-casa/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Pinllo, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa unifamiliar",
+  "ordenCatalogo": 18
+}

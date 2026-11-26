@@ -1,0 +1,47 @@
+{
+  "codigo": "000092HT",
+  "titulo": "Propiedad rentera de 3 pisos, sector CNT",
+  "tipo": "casa-rentera",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Sector CNT",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 296000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 168.18,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 356.43,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": true,
+  "garajeDetalle": "Amplio garaje",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "1 local comercial",
+    "1 oficina",
+    "1 departamento"
+  ],
+  "viasAcceso": "Av. Los Shyris y Av. Rumiñahui",
+  "descripcion": "Propiedad rentera ubicada en la Av. Los Shyris y Av. Rumiñahui, frente al colegio Mario Cobo Barona. Propiedad de tres pisos. Cuenta con amplio garaje, un local comercial, una oficina y un departamento.",
+  "fotoPrincipal": "/img/propiedades/sector-cnt-rentera/01.jpg",
+  "galeria": [
+    "/img/propiedades/sector-cnt-rentera/02.jpg",
+    "/img/propiedades/sector-cnt-rentera/03.jpg",
+    "/img/propiedades/sector-cnt-rentera/04.jpg",
+    "/img/propiedades/sector-cnt-rentera/05.jpg",
+    "/img/propiedades/sector-cnt-rentera/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Av. Los Shyris y Av. Rumiñahui, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Propiedad rentera",
+  "ordenCatalogo": 43
+}

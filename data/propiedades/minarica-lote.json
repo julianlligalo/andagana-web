@@ -1,0 +1,40 @@
+{
+  "codigo": "00055DG",
+  "titulo": "Lote en Miñarica",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Miñarica",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 62000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 1691,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [],
+  "viasAcceso": "Acceso vehicular y vías asfaltadas",
+  "descripcion": "Lote de 1.691 m² ubicado en Miñarica, a pocos minutos de la vía Ambato - Guaranda. Cuenta con todos los servicios básicos, acceso vehicular y vías asfaltadas.",
+  "fotoPrincipal": "/img/propiedades/minarica-lote/01.jpg",
+  "galeria": [
+    "/img/propiedades/minarica-lote/02.jpg",
+    "/img/propiedades/minarica-lote/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Miñarica, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lote",
+  "ordenCatalogo": 7
+}

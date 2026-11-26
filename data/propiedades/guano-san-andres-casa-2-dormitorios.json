@@ -1,0 +1,45 @@
+{
+  "codigo": "00002CA",
+  "titulo": "Casa de 2 dormitorios en San Andrés de Guano",
+  "tipo": "casa",
+  "operacion": "venta",
+  "canton": "Guano",
+  "sector": "San Andrés",
+  "provincia": "Chimborazo",
+  "oficina": "ambato",
+  "precio": 27000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 365,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 183.8,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": true,
+  "garajeDetalle": "Garaje para 4 vehículos",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "2 dormitorios"
+  ],
+  "viasAcceso": "A tres cuadras de la Panamericana E35",
+  "descripcion": "Casa unifamiliar en San Andrés de Guano, a tres cuadras de la Panamericana E35 y a dos cuadras del parque central. Consta de dos dormitorios, sala, cocina y baño. Amplio garaje para cuatro vehículos.",
+  "fotoPrincipal": "/img/propiedades/guano-san-andres-casa-2-dormitorios/01.jpg",
+  "galeria": [
+    "/img/propiedades/guano-san-andres-casa-2-dormitorios/02.jpg",
+    "/img/propiedades/guano-san-andres-casa-2-dormitorios/03.jpg",
+    "/img/propiedades/guano-san-andres-casa-2-dormitorios/04.jpg",
+    "/img/propiedades/guano-san-andres-casa-2-dormitorios/05.jpg",
+    "/img/propiedades/guano-san-andres-casa-2-dormitorios/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "San Andrés, Guano, Chimborazo, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa unifamiliar",
+  "ordenCatalogo": 29
+}

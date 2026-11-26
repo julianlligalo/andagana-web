@@ -1,0 +1,44 @@
+{
+  "codigo": "",
+  "titulo": "Lote con árboles frutales en Patate",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Patate",
+  "sector": "Vía Ambato - Patate",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 50000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 6820,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso",
+    "Agua de regadío",
+    "Documentos en regla"
+  ],
+  "otrasCaracteristicas": [
+    "Plantación de mandarinas"
+  ],
+  "viasAcceso": "Acceso vehicular",
+  "descripcion": "Lote de 6.820 m² ubicado a 2 minutos de la vía principal Ambato - Patate. Cuenta con todos los servicios básicos, agua de regadío y plantación de mandarinas y árboles frutales. Documentos en regla.",
+  "fotoPrincipal": "/img/propiedades/patate-lote-mandarinas/01.jpg",
+  "galeria": [
+    "/img/propiedades/patate-lote-mandarinas/02.jpg",
+    "/img/propiedades/patate-lote-mandarinas/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Patate, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lote agrícola",
+  "ordenCatalogo": 32
+}

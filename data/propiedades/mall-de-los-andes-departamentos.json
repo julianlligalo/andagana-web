@@ -1,0 +1,46 @@
+{
+  "codigo": "000003HS",
+  "titulo": "Edificio de departamentos tras el Mall de Los Andes",
+  "tipo": "departamento",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Mall de Los Andes",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 320000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 168.18,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 135.46,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": true,
+  "garajeDetalle": "Garaje para 5 vehículos",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "3 departamentos",
+    "1 suite"
+  ],
+  "viasAcceso": "Vías asfaltadas",
+  "descripcion": "Propiedad ubicada tras el Mall de Los Andes, en las calles Manuel Isaías Sánchez y José Rodríguez Labandera. A pocas cuadras del Municipio de Ambato y de la Universidad Técnica de Ambato. Consta de 3 departamentos, 1 suite y garaje para 5 vehículos.",
+  "fotoPrincipal": "/img/propiedades/mall-de-los-andes-departamentos/01.jpg",
+  "galeria": [
+    "/img/propiedades/mall-de-los-andes-departamentos/02.jpg",
+    "/img/propiedades/mall-de-los-andes-departamentos/03.jpg",
+    "/img/propiedades/mall-de-los-andes-departamentos/04.jpg",
+    "/img/propiedades/mall-de-los-andes-departamentos/05.jpg",
+    "/img/propiedades/mall-de-los-andes-departamentos/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Mall de los Andes, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Edificio de departamentos",
+  "ordenCatalogo": 25
+}

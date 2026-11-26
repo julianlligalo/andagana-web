@@ -1,0 +1,42 @@
+{
+  "codigo": "00069HT",
+  "titulo": "Lote junto a la U.E. Juan Pablo II en Huachi Chico",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Huachi Chico",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 110000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 394,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "Línea de buses a pocos minutos"
+  ],
+  "viasAcceso": "Vía Manuela Sáenz, vías asfaltadas",
+  "descripcion": "Lote de 394 m² ubicado en Huachi Chico, en las calles Legarda y Gabriel Mogrovejo, junto a la Unidad Educativa Juan Pablo II. Cuenta con todos los servicios básicos, vías asfaltadas y línea de buses a pocos minutos.",
+  "fotoPrincipal": "/img/propiedades/huachi-chico-lote-394/01.jpg",
+  "galeria": [
+    "/img/propiedades/huachi-chico-lote-394/02.jpg",
+    "/img/propiedades/huachi-chico-lote-394/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Unidad Educativa Juan Pablo II, Huachi Chico, Ambato, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lote",
+  "ordenCatalogo": 23
+}

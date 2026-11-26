@@ -1,0 +1,42 @@
+{
+  "codigo": "000000CA",
+  "titulo": "20 lotes en Santa Rosa - Las Lajas",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Santa Rosa",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 9500,
+  "consultarPrecio": false,
+  "precioDesde": true,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 250,
+  "areaTerrenoTexto": "250 y 300 m²",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "20 lotes",
+    "Inversión accesible"
+  ],
+  "viasAcceso": "Vía principal de 12 m y vías de acceso de 6 m",
+  "descripcion": "20 lotes en venta de 250 y 300 m² en Santa Rosa, sector Las Lajas. Cuenta con vía principal de 12 metros y vías de acceso de 6 metros.",
+  "fotoPrincipal": "/img/propiedades/santa-rosa-las-lajas-lotes/01.jpg",
+  "galeria": [
+    "/img/propiedades/santa-rosa-las-lajas-lotes/02.jpg",
+    "/img/propiedades/santa-rosa-las-lajas-lotes/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Santa Rosa, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lotización",
+  "ordenCatalogo": 5
+}

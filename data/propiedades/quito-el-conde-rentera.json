@@ -1,0 +1,47 @@
+{
+  "codigo": "000511EP",
+  "titulo": "Casa rentera en El Conde, sur de Quito",
+  "tipo": "casa-rentera",
+  "operacion": "venta",
+  "canton": "Quito",
+  "sector": "El Conde",
+  "provincia": "Pichincha",
+  "oficina": "quito",
+  "precio": 130000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 165,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": 220,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": true,
+  "garajeDetalle": "Garaje para 4 vehículos",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "2 departamentos de 3 habitaciones",
+    "Cuarto de bodega",
+    "Área de lavandería"
+  ],
+  "viasAcceso": "Cerca de la Av. Turubamba",
+  "descripcion": "Casa en venta en el sur de Quito, sector El Conde. Consta de 2 departamentos de 3 habitaciones, garaje para 4 vehículos, cuarto de bodega y área de lavandería.",
+  "fotoPrincipal": "/img/propiedades/quito-el-conde-rentera/01.jpg",
+  "galeria": [
+    "/img/propiedades/quito-el-conde-rentera/02.jpg",
+    "/img/propiedades/quito-el-conde-rentera/03.jpg",
+    "/img/propiedades/quito-el-conde-rentera/04.jpg",
+    "/img/propiedades/quito-el-conde-rentera/05.jpg",
+    "/img/propiedades/quito-el-conde-rentera/06.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "El Conde, Quito, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Casa rentera",
+  "ordenCatalogo": 53
+}

@@ -1,0 +1,42 @@
+{
+  "codigo": "00003HT",
+  "titulo": "Lote en Santa Rosa - Curva Brava",
+  "tipo": "terreno",
+  "operacion": "venta",
+  "canton": "Ambato",
+  "sector": "Santa Rosa",
+  "provincia": "Tungurahua",
+  "oficina": "ambato",
+  "precio": 37000,
+  "consultarPrecio": false,
+  "precioDesde": false,
+  "precioEspecial": true,
+  "financiamiento": true,
+  "areaTerreno": 237,
+  "areaTerrenoTexto": "",
+  "areaConstruccion": null,
+  "habitaciones": null,
+  "banos": null,
+  "garaje": false,
+  "garajeDetalle": "",
+  "caracteristicas": [
+    "Servicios básicos",
+    "Vías de acceso"
+  ],
+  "otrasCaracteristicas": [
+    "A 2 minutos de la vía Guaranda E491"
+  ],
+  "viasAcceso": "Vías asfaltadas y acceso vehicular",
+  "descripcion": "Lote en venta de 237 m² ubicado en Santa Rosa, barrio Los Álamos. Cuenta con todos los servicios básicos, vías asfaltadas y acceso vehicular. A 2 minutos de la vía Guaranda E491.",
+  "fotoPrincipal": "/img/propiedades/santa-rosa-curva-brava-lote/01.jpg",
+  "galeria": [
+    "/img/propiedades/santa-rosa-curva-brava-lote/02.jpg",
+    "/img/propiedades/santa-rosa-curva-brava-lote/03.jpg"
+  ],
+  "mapaEnlace": "",
+  "mapaTexto": "Santa Rosa, Ambato, Tungurahua, Ecuador",
+  "estado": "disponible",
+  "destacada": false,
+  "subtipo": "Lote",
+  "ordenCatalogo": 31
+}

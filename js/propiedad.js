@@ -1,7 +1,7 @@
 /* Ficha de una propiedad: galería, características, mapa y WhatsApp */
 (function () {
   "use strict";
-  const { icono, m2, precioHTML, precioPlano, areaTerrenoTexto, TIPOS, foto, esc, ubicacion, whatsappURL, tarjeta, iniciarComun } = window.AG;
+  const { icono, m2, precioHTML, precioPlano, sinPrecio, areaTerrenoTexto, iconoTipo, nombreTipo, ESTADOS, oficinaDe, foto, esc, ubicacion, whatsappURL, tarjeta, iniciarComun } = window.AG;
   const TODAS = window.PROPIEDADES || [];
   const id = new URLSearchParams(location.search).get("id");
   const p = TODAS.find(x => x.id === id);
@@ -27,7 +27,9 @@
       propiedad_id: p.id,
       tipo_propiedad: p.tipo,
       canton: p.canton,
-      sector: p.sector || ""
+      sector: p.sector || "",
+      estado: p.estado || "disponible",
+      oficina: p.oficina || ""
     };
     if (p.precio != null) datos.precio = p.precio;
     window.AG_ANALITICA.evento("ver_propiedad", datos);
@@ -35,25 +37,35 @@
   const wa = whatsappURL(p);
   const fotos = (p.fotos || []).map((_, i) => foto(p, i));
   const area = areaTerrenoTexto(p);
-  const noAplica = p.tipo === "terreno" ? "No aplica" : "No especificado";
+  const esTerreno = p.tipo === "terreno";
+  const noAplica = esTerreno ? "No aplica" : "No especificado";
+  const estado = ESTADOS[p.estado];
+  const oficina = oficinaDe(p);
 
   // ---------- Características con iconos ----------
   const caract = [
-    { ic: p.tipo, t: "Tipo", v: p.subtipo || TIPOS[p.tipo].nombre, ok: true },
-    { ic: "garaje", t: "Garaje", v: p.garaje || noAplica, ok: !!p.garaje },
+    { ic: iconoTipo(p.tipo), t: "Tipo", v: (p.subtipo || nombreTipo(p.tipo)) + (p.operacion === "arriendo" ? " · Arriendo" : ""), ok: true },
+    { ic: "garaje", t: "Garaje", v: p.garaje ? (p.garajeDetalle || "Sí") : (esTerreno ? "No aplica" : "No"), ok: !!p.garaje },
     { ic: "servicios", t: "Servicios básicos", v: p.serviciosBasicos ? "Disponibles" : "Consultar", ok: !!p.serviciosBasicos },
     { ic: "vias", t: "Vías de acceso", v: p.viasAcceso || "Consultar", ok: !!p.viasAcceso },
     { ic: "construccion", t: "Área de construcción", v: p.areaConstruccion ? m2(p.areaConstruccion) : noAplica, ok: !!p.areaConstruccion },
     { ic: "area", t: "Área de terreno", v: area || "Consultar", ok: !!area }
   ];
+  if (p.habitaciones) caract.push({ ic: "cama", t: "Habitaciones", v: String(p.habitaciones), ok: true });
+  if (p.banos) caract.push({ ic: "bano", t: "Baños", v: String(p.banos), ok: true });
 
-  const consultaMapa = p.mapa || ubicacion(p) + ", Ecuador";
-  const mapaSrc = "https://maps.google.com/maps?q=" + encodeURIComponent(consultaMapa) + "&z=15&hl=es&output=embed";
-  const mapaLink = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(consultaMapa);
+  // ---------- Mapa: enlace de Google Maps si lo hay; si no, el sector ----------
+  const enlace = p.mapaEnlace || "";
+  const coords = (enlace.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/) || enlace.match(/[?&](?:q|query|ll|destination)=(-?\d+\.\d+)(?:,|%2C)(-?\d+\.\d+)/) || []).slice(1, 3);
+  const exacto = coords.length === 2;
+  const consultaMapa = exacto ? coords.join(",") : (p.mapaTexto || [ubicacion(p), p.provincia, "Ecuador"].filter(Boolean).join(", "));
+  const mapaSrc = "https://maps.google.com/maps?q=" + encodeURIComponent(consultaMapa) + "&z=" + (exacto ? 17 : 15) + "&hl=es&output=embed";
+  const mapaLink = /^https?:\/\//.test(enlace) ? enlace : "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(consultaMapa);
+  const mapaNota = exacto || enlace ? "Ubicación de la propiedad. Pide más detalles por WhatsApp." : "Ubicación referencial del sector. Pide la dirección exacta por WhatsApp.";
 
   const relacionadas = TODAS
     .filter(x => x.id !== p.id)
-    .map(x => ({ x, s: (x.canton === p.canton ? 2 : 0) + (x.tipo === p.tipo ? 1 : 0) + (x.sector === p.sector ? 1 : 0) }))
+    .map(x => ({ x, s: (x.canton === p.canton ? 2 : 0) + (x.tipo === p.tipo ? 1 : 0) + (x.sector === p.sector ? 1 : 0) + (x.estado === "vendida" ? -3 : 0) }))
     .sort((a, b) => b.s - a.s)
     .slice(0, 3)
     .map(o => o.x);
@@ -62,8 +74,11 @@
     '<nav class="migas" aria-label="Ruta"><a href="index.html#propiedades">' + icono("volver") + "Propiedades</a><span>/</span><span>" + esc(p.canton) + "</span><span>/</span><span>" + esc(p.sector || "") + "</span></nav>" +
     '<div class="ficha-cabecera aparecer">' +
       "<div>" +
-        '<div class="ficha-etiquetas"><span class="pill pill-plata">' + icono("rayo") + "¡Financiamiento inmediato!</span>" +
-        '<span class="pill pill-navy">' + icono(p.tipo) + esc(TIPOS[p.tipo].nombre) + "</span></div>" +
+        '<div class="ficha-etiquetas">' +
+        (estado ? '<span class="pill pill-estado estado-' + p.estado + '">' + estado + "</span>" : "") +
+        (p.financiamiento !== false && !estado ? '<span class="pill pill-plata">' + icono("rayo") + "¡Financiamiento inmediato!</span>" : "") +
+        (p.destacada ? '<span class="pill pill-dorado">★ Destacada</span>' : "") +
+        '<span class="pill pill-navy">' + icono(iconoTipo(p.tipo)) + esc(nombreTipo(p.tipo)) + (p.operacion === "arriendo" ? " · Arriendo" : "") + "</span></div>" +
         "<h1>" + esc(p.titulo) + "</h1>" +
         '<div class="ficha-ubicacion">' + icono("ubicacion") + esc(ubicacion(p)) + (p.provincia ? " · " + esc(p.provincia) : "") + "</div>" +
       "</div>" +
@@ -75,6 +90,7 @@
           '<div class="galeria-principal" id="g-principal">' +
             '<div class="fondo-desenfoque" id="g-fondo"></div>' +
             '<img id="g-img" alt="' + esc(p.titulo) + '">' +
+            (estado ? '<span class="franja-estado grande estado-' + p.estado + '">' + estado + "</span>" : "") +
             (fotos.length > 1 ? '<button class="galeria-flecha prev" id="g-prev" aria-label="Foto anterior">' + icono("flechaIzq") + "</button>" +
               '<button class="galeria-flecha next" id="g-next" aria-label="Foto siguiente">' + icono("flechaDer") + "</button>" : "") +
             '<span class="galeria-contador" id="g-contador"></span>' +
@@ -95,22 +111,25 @@
         // Mapa
         '<section class="bloque"><h2>Ubicación</h2>' +
           '<div class="mapa"><iframe src="' + esc(mapaSrc) + '" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ' + esc(ubicacion(p)) + '"></iframe></div>' +
-          '<div class="mapa-nota"><span>Ubicación referencial del sector. Pide la dirección exacta por WhatsApp.</span><a href="' + esc(mapaLink) + '" target="_blank" rel="noopener">Abrir en Google Maps ↗</a></div>' +
+          '<div class="mapa-nota"><span>' + mapaNota + '</span><a href="' + esc(mapaLink) + '" target="_blank" rel="noopener">Abrir en Google Maps ↗</a></div>' +
         "</section>" +
       "</div>" +
       // Lateral de precio
       "<aside>" +
         '<div class="precio-caja aparecer">' +
-          '<div class="etq">PRECIO ESPECIAL</div>' +
+          (estado ? '<div class="aviso-estado estado-' + p.estado + '">' + (p.estado === "vendida"
+            ? "<strong>Propiedad vendida.</strong> Escríbenos y te mostramos opciones similares."
+            : "<strong>Propiedad reservada.</strong> Puedes escribirnos por si vuelve a estar disponible.") + "</div>" : "") +
+          '<div class="etq">' + (p.precioEspecial !== false && !sinPrecio(p) && !estado ? "PRECIO ESPECIAL" : "PRECIO") + "</div>" +
           '<div class="monto">' + precioHTML(p, true) + "</div>" +
           '<div class="codigo">' + (p.codigo ? "COD: " + esc(p.codigo) : "SIN CÓDIGO") + "</div>" +
           '<div class="resumen">' +
             "<div><small>Terreno</small><strong>" + esc(area || "—") + "</strong></div>" +
             "<div><small>Construcción</small><strong>" + (p.areaConstruccion ? m2(p.areaConstruccion) : "—") + "</strong></div>" +
           "</div>" +
-          '<div class="fin">' + icono("dinero") + "<div>¡Financiamiento inmediato!<span>Te ayudamos con un plan a tu medida.</span></div></div>" +
-          '<a class="btn btn-wa btn-bloque" href="' + esc(wa) + '" target="_blank" rel="noopener">' + icono("whatsapp") + "Me interesa, escribir por WhatsApp</a>" +
-          '<div class="tel">o llámanos al <strong>' + esc((window.ANDAGANA || {}).whatsappVisible || "") + "</strong></div>" +
+          (p.financiamiento !== false && !estado ? '<div class="fin">' + icono("dinero") + "<div>¡Financiamiento inmediato!<span>Te ayudamos con un plan a tu medida.</span></div></div>" : "") +
+          '<a class="btn btn-wa btn-bloque" href="' + esc(wa) + '" target="_blank" rel="noopener">' + icono("whatsapp") + (p.estado === "vendida" ? "Ver opciones similares" : "Me interesa, escribir por WhatsApp") + "</a>" +
+          '<div class="tel">' + (oficina ? "Atiende: " + esc(oficina.nombre) + " · <strong>" + esc(oficina.telefonoVisible || oficina.telefono) + "</strong>" : "") + "</div>" +
         "</div>" +
       "</aside>" +
     "</div>" +
@@ -120,7 +139,7 @@
   document.getElementById("wa-flotante").href = wa;
   document.body.classList.add("con-barra");
   document.getElementById("barra-movil").innerHTML =
-    '<div class="bm-precio"><small>Precio especial · ' + (p.codigo ? "COD " + esc(p.codigo) : "Sin código") + "</small>" + esc(precioPlano(p)) + "</div>" +
+    '<div class="bm-precio"><small>' + (estado ? estado : (p.precioEspecial !== false && !sinPrecio(p) ? "Precio especial" : "Precio")) + " · " + (p.codigo ? "COD " + esc(p.codigo) : "Sin código") + "</small>" + esc(precioPlano(p)) + "</div>" +
     '<a class="btn btn-wa" href="' + esc(wa) + '" target="_blank" rel="noopener">' + icono("whatsapp") + "WhatsApp</a>";
 
   // ---------- Galería ----------
