@@ -593,3 +593,39 @@ button, input, select { font: inherit; color: inherit; }
   font-size: .8rem; letter-spacing: .02em; white-space: nowrap; font-variant-numeric: tabular-nums;
 }
 .contador-visitas[hidden] { display: none; }
+/* ---------- Nuestras oficinas ---------- */
+.oficinas { background: var(--white); }
+.oficinas-grilla { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.oficina {
+  display: flex; flex-direction: column; overflow: hidden;
+  background: var(--white); border: 1px solid var(--silver-200); border-radius: var(--radius); box-shadow: var(--shadow);
+  border-top: 3px solid var(--gold-500);
+}
+.oficina-mapa { aspect-ratio: 16 / 7; background: var(--silver-200); }
+.oficina-mapa iframe { width: 100%; height: 100%; border: 0; display: block; }
+.oficina-cuerpo { padding: 1.4rem 1.5rem 1.5rem; display: flex; flex-direction: column; gap: .8rem; flex: 1; }
+.oficina-cabecera { display: flex; align-items: center; gap: .9rem; }
+.oficina-icono {
+  flex: none; width: 50px; height: 50px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--navy-900); color: var(--white); box-shadow: 0 0 0 3px var(--white), 0 0 0 5px var(--gold-500);
+}
+.oficina-icono svg { width: 24px; height: 24px; }
+.oficina-tipo { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--gold-700); }
+.oficina h3 { margin: 0; font-family: var(--font-head); font-size: 1.3rem; color: var(--navy-900); }
+.oficina-dato { display: flex; gap: .6rem; margin: 0; color: var(--ink-soft); font-size: .95rem; line-height: 1.45; }
+.oficina-dato svg { width: 1.2rem; height: 1.2rem; flex: none; margin-top: .12rem; color: var(--navy-700); }
+.oficina-dato strong { color: var(--navy-900); white-space: nowrap; }
+.oficina-botones { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: auto; padding-top: .4rem; }
+.oficina-botones .btn { flex: 1; min-width: 140px; }
+@media (max-width: 800px) {
+  .oficinas-grilla { grid-template-columns: 1fr; }
+  .oficina-mapa { aspect-ratio: 16 / 8; }
+}
+
+/* oficinas en el pie de página */
+.pie-grid { grid-template-columns: 1.1fr 2fr .9fr; }
+.pie-oficinas-lista { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem 1.6rem; }
+.pie-oficina { display: flex; flex-direction: column; gap: .45rem; }
+.pie-oficina strong { color: var(--white); font-size: .92rem; }
+@media (max-width: 900px) { .pie-grid { grid-template-columns: 1fr; } .pie-marca { grid-column: auto; } }
+@media (max-width: 600px) { .pie-oficinas-lista { grid-template-columns: 1fr; } }

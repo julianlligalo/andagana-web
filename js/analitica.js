@@ -9,6 +9,7 @@
                         (codigo_propiedad cuando es dentro de una ficha)
      ver_propiedad   -> cada vez que se abre la ficha de una propiedad
      usar_filtro     -> cada cambio en los filtros del listado
+     clic_como_llegar-> clic en "Cómo llegar" de una oficina
    ========================================================== */
 (function () {
   "use strict";
@@ -55,6 +56,7 @@
     [".barra-movil", "barra_movil"],
     [".precio-caja", "ficha_precio"],
     [".banner", "portada"],
+    ["#oficinas", "seccion_oficinas"],
     ["#financiamiento", "seccion_financiamiento"],
     ["#como-funciona", "seccion_como_funciona"],
     ["#contacto", "seccion_contacto"],
@@ -67,7 +69,15 @@
     return "otro";
   }
   document.addEventListener("click", function (e) {
-    var a = e.target.closest && e.target.closest('a[href*="wa.me/"]');
+    if (!e.target.closest) return;
+    // "Cómo llegar" de una oficina
+    var ruta = e.target.closest("[data-como-llegar]");
+    if (ruta) {
+      var of = ruta.closest("[data-oficina]");
+      evento("clic_como_llegar", { oficina: of ? of.getAttribute("data-oficina") : "", ubicacion_boton: origen(ruta) });
+      return;
+    }
+    var a = e.target.closest('a[href*="wa.me/"]');
     if (!a) return;
     var p = window.AG_PROPIEDAD; // la fija propiedad.js en la ficha
     var datos = {
@@ -75,6 +85,8 @@
       pagina: p ? "ficha" : "inicio",
       texto_boton: (a.textContent || "").trim().slice(0, 60) || "WhatsApp"
     };
+    var oficina = a.closest("[data-oficina]");
+    if (oficina) datos.oficina = oficina.getAttribute("data-oficina");
     if (p) {
       datos.codigo_propiedad = p.codigo || "SIN CODIGO";
       datos.propiedad_id = p.id;

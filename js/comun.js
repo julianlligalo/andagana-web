@@ -106,6 +106,40 @@
     return "https://wa.me/" + (cfg.whatsapp || "593992674556") + "?text=" + encodeURIComponent(msg);
   }
 
+  // ---------- Oficinas ----------
+  function oficinaWA(o) {
+    const msg = "Hola Andagana Corporación (" + o.nombre + "), me gustaría recibir información sobre sus propiedades y el financiamiento.";
+    return "https://wa.me/" + o.whatsapp + "?text=" + encodeURIComponent(msg);
+  }
+  function oficinaRuta(o) {
+    return "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(o.mapa || o.direccion);
+  }
+  function oficinaMapa(o) {
+    return "https://maps.google.com/maps?q=" + encodeURIComponent(o.mapa || o.direccion) + "&z=16&hl=es&output=embed";
+  }
+  function tarjetaOficina(o) {
+    return '<article class="oficina aparecer" data-oficina="' + esc(o.nombre) + '">' +
+      '<div class="oficina-mapa"><iframe src="' + esc(oficinaMapa(o)) + '" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ' + esc(o.nombre) + '"></iframe></div>' +
+      '<div class="oficina-cuerpo">' +
+        '<div class="oficina-cabecera"><span class="oficina-icono">' + icono("ubicacion") + "</span>" +
+          '<div><span class="oficina-tipo">' + esc(o.tipo) + "</span><h3>" + esc(o.nombre) + "</h3></div></div>" +
+        '<p class="oficina-dato">' + icono("mapa") + "<span>" + esc(o.direccion) + "</span></p>" +
+        '<p class="oficina-dato">' + icono("telefono") + "<span>Teléfono / WhatsApp: <strong>" + esc(o.telefonoVisible || o.telefono) + "</strong></span></p>" +
+        '<div class="oficina-botones">' +
+          '<a class="btn btn-wa" href="' + esc(oficinaWA(o)) + '" target="_blank" rel="noopener">' + icono("whatsapp") + "WhatsApp</a>" +
+          '<a class="btn btn-navy" href="' + esc(oficinaRuta(o)) + '" target="_blank" rel="noopener" data-como-llegar>' + icono("mapa") + "Cómo llegar</a>" +
+        "</div>" +
+      "</div>" +
+    "</article>";
+  }
+  function oficinaPie(o) {
+    return '<div class="pie-oficina" data-oficina="' + esc(o.nombre) + '">' +
+      "<strong>" + esc(o.nombre) + "</strong>" +
+      '<a class="pie-dato" href="' + esc(oficinaRuta(o)) + '" target="_blank" rel="noopener" data-como-llegar>' + icono("ubicacion") + "<span>" + esc(o.direccion) + "</span></a>" +
+      '<a class="pie-dato" href="' + esc(oficinaWA(o)) + '" target="_blank" rel="noopener">' + icono("whatsapp") + "<span>" + esc(o.telefonoVisible || o.telefono) + "</span></a>" +
+    "</div>";
+  }
+
   // ---------- Tarjeta de propiedad ----------
   function tarjeta(p) {
     const area = areaTerrenoTexto(p);
@@ -131,6 +165,9 @@
 
   function iniciarComun() {
     const cfg = window.ANDAGANA || {};
+    const oficinas = cfg.oficinas || [];
+    document.querySelectorAll("[data-oficinas-tarjetas]").forEach(el => { el.innerHTML = oficinas.map(tarjetaOficina).join(""); });
+    document.querySelectorAll("[data-oficinas-pie]").forEach(el => { el.innerHTML = oficinas.map(oficinaPie).join(""); });
     document.querySelectorAll("[data-wa-general]").forEach(a => { a.href = whatsappURL(null, a.dataset.waMsg); });
     document.querySelectorAll("[data-icono]").forEach(el => { el.insertAdjacentHTML("afterbegin", icono(el.dataset.icono)); });
     document.querySelectorAll("[data-tel]").forEach(el => { el.textContent = cfg.whatsappVisible || ""; });
