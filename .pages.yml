@@ -244,6 +244,15 @@ content:
         label: Etiqueta corta en la foto (opcional)
         type: string
         description: "Reemplaza al tipo en la etiqueta de la foto. Ej.: Lotización, Casa de campo"
+      - name: fechaPublicacion
+        label: Fecha de publicación
+        type: date
+        description: "Ordena el feed RSS (lo más reciente primero). Si la dejas vacía, se pone la fecha de hoy al guardar."
+      - name: guid
+        label: Identificador del feed (automático)
+        type: string
+        readonly: true
+        description: "Se crea solo la primera vez y nunca cambia, para que Facebook no vuelva a publicar la propiedad al editarla."
 
   - name: revision
     label: ⚠️ Revisión de errores

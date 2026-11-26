@@ -42,5 +42,7 @@
   "estado": "disponible",
   "destacada": false,
   "subtipo": "Edificio de departamentos",
-  "ordenCatalogo": 25
+  "ordenCatalogo": 25,
+  "fechaPublicacion": "2026-11-25",
+  "guid": "andagana-000003hs"
 }

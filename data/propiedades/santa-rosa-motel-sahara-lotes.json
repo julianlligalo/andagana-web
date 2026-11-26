@@ -39,5 +39,7 @@
   "estado": "disponible",
   "destacada": false,
   "subtipo": "Lotización",
-  "ordenCatalogo": 10
+  "ordenCatalogo": 10,
+  "fechaPublicacion": "2026-11-25",
+  "guid": "andagana-000000ca-2"
 }
