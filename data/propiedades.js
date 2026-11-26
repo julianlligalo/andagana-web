@@ -1052,7 +1052,11 @@ window.PROPIEDADES = [
 /* Datos de contacto de la empresa (se usan en toda la web) */
 window.ANDAGANA = {
   nombre: "Andagana Corporación",
-  eslogan: "Financiamos Oportunidades, Entregamos Hogares",
-  whatsapp: "593960574213",           // número en formato internacional, sin "+" ni espacios
-  whatsappVisible: "+593 96 057 4213"
+  eslogan: "Financiamos oportunidades, entregamos hogares.",
+  whatsapp: "593992674556",           // número en formato internacional, sin "+" ni espacios
+  whatsappVisible: "+593 99 267 4556",
+  telefonoLocal: "0992674556",
+  direccion: "Luis Ernesto Alvarado y Marcos Montalvo, Ambato",
+  facebook: "https://www.facebook.com/profile.php?id=61591559723514",
+  tiktok: "https://www.tiktok.com/@corporacion.andagana"
 };

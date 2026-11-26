@@ -22,6 +22,7 @@
       </a>
       <nav class="nav" aria-label="Principal">
         <a class="enlace" href="#inicio">Inicio</a>
+        <a class="enlace" href="#financiamiento">Financiamiento</a>
         <a class="enlace" href="#propiedades">Propiedades</a>
         <a class="enlace" href="#contacto">Contacto</a>
         <a class="btn btn-wa" data-wa-general target="_blank" rel="noopener" data-icono="whatsapp"><span><span class="txt-largo">Escríbenos por </span>WhatsApp</span></a>
@@ -30,23 +31,30 @@
   </header>
 
   <main>
-    <!-- 1. PORTADA -->
-    <section class="portada" id="inicio">
-      <div class="portada-fondo" aria-hidden="true"></div>
-      <div class="contenedor">
-        <div class="aparecer">
-          <div class="portada-logo"><img src="img/logo.png" alt="Andagana Corporación"></div>
-          <h1>Financiamos <span class="script">Oportunidades</span>Entregamos <span class="script">Hogares</span></h1>
-          <p class="lead">Casas, terrenos, departamentos y locales comerciales en Ambato, Quito y el centro del país, con <strong>financiamiento inmediato</strong> y precios especiales.</p>
-          <div class="portada-acciones">
-            <a class="btn btn-plata" href="#propiedades" data-icono="buscar">Ver propiedades</a>
-            <a class="btn btn-borde" data-wa-general target="_blank" rel="noopener" data-icono="whatsapp">Asesoría gratuita</a>
-          </div>
+    <!-- 1. PORTADA (banner) -->
+    <section class="banner" id="inicio" aria-label="Portada">
+      <!-- Computadora y tableta: la imagen completa del banner -->
+      <div class="banner-img">
+        <img src="img/portada/banner.jpg" width="1080" height="650"
+             alt="Tu próximo capítulo comienza aquí. Compra, venta y financiamiento. Agenda tu cita al 0992674556.">
+        <div class="banner-acciones">
+          <a class="btn btn-plata" href="#propiedades" data-icono="buscar">Ver propiedades</a>
+          <a class="btn btn-wa" data-wa-general data-wa-msg="Hola Andagana Corporación, me gustaría agendar una cita para conocer sus propiedades y opciones de financiamiento." target="_blank" rel="noopener" data-icono="whatsapp">Agenda tu cita</a>
         </div>
-        <div class="portada-cifras aparecer" aria-label="Resumen">
-          <div class="cifra"><div class="cifra-num" id="cifra-total">0</div><div class="cifra-txt"><strong>Propiedades</strong>disponibles hoy</div></div>
-          <div class="cifra"><div class="cifra-num" id="cifra-cantones">0</div><div class="cifra-txt"><strong>Cantones</strong>en <span id="cifra-provincias">0</span> provincias</div></div>
-          <div class="cifra"><div class="cifra-num" data-icono="rayo"></div><div class="cifra-txt"><strong>Financiamiento</strong>inmediato</div></div>
+      </div>
+      <!-- Celular: el mismo diseño con texto real sobre la foto -->
+      <div class="banner-movil">
+        <div class="banner-movil-fondo" aria-hidden="true"></div>
+        <div class="contenedor">
+          <h1 class="banner-titulo"><small>Tu</small> <span class="azul">Próximo</span> <span class="blanco">Capítulo</span> <span class="azul">Comienza</span> <span class="blanco">Aquí</span></h1>
+          <ul class="banner-servicios">
+            <li>Compra</li><li>Venta</li><li>Financiamiento</li>
+          </ul>
+          <div class="banner-botones">
+            <a class="btn btn-plata" href="#propiedades" data-icono="buscar">Ver propiedades</a>
+            <a class="btn btn-wa" data-wa-general data-wa-msg="Hola Andagana Corporación, me gustaría agendar una cita para conocer sus propiedades y opciones de financiamiento." target="_blank" rel="noopener" data-icono="whatsapp">Agenda tu cita</a>
+          </div>
+          <p class="banner-tel">Agenda tu cita: <strong data-tel></strong></p>
         </div>
       </div>
     </section>
@@ -59,7 +67,85 @@
       </div>
     </section>
 
-    <!-- 2 y 3. LISTADO Y FILTROS -->
+    <!-- 2. FINANCIAMOS TU PROPIEDAD -->
+    <section class="seccion financia" id="financiamiento">
+      <div class="contenedor">
+        <div class="financia-grid">
+          <div class="financia-texto aparecer">
+            <span class="eyebrow">Financiamiento</span>
+            <h2>Financiamos tu propiedad
+              <span class="tasa"><span class="tasa-desde">desde el</span><span class="tasa-num"><b>8,5%</b><sup>*</sup></span><span class="tasa-int">de interés</span></span>
+            </h2>
+            <p class="nota-tasa">*Tasa referencial desde el 8,5% anual. Sujeta a análisis, aprobación del crédito y condiciones vigentes.</p>
+            <p class="frase-script">Tu hogar también es una inversión en tu futuro.</p>
+            <a class="btn btn-navy" data-wa-general data-wa-msg="Hola Andagana Corporación, me gustaría conocer las condiciones del financiamiento desde el 8,5% de interés." target="_blank" rel="noopener" data-icono="whatsapp">Consultar mi financiamiento</a>
+          </div>
+          <div class="financia-foto aparecer">
+            <img src="img/portada/financiamos-foto.jpg" width="632" height="715" loading="lazy" alt="Familia feliz frente a su nueva casa">
+          </div>
+        </div>
+        <div class="servicios">
+          <div class="servicio aparecer">
+            <span class="servicio-icono" data-icono="casa"></span>
+            <div><h3>Compra tu hogar</h3><p>Casas, departamentos, terrenos y locales con un plan de pago a tu medida.</p></div>
+          </div>
+          <div class="servicio aparecer">
+            <span class="servicio-icono" data-icono="apreton"></span>
+            <div><h3>Vende con confianza</h3><p>Te acompañamos en la venta de tu propiedad de forma segura y transparente.</p></div>
+          </div>
+          <div class="servicio aparecer">
+            <span class="servicio-icono" data-icono="monedas"></span>
+            <div><h3>Financia tus proyectos</h3><p>Obtén el respaldo que necesitas para construir, ampliar o invertir.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ¿QUÉ ES COMPRAR CON FINANCIAMIENTO? -->
+    <section class="seccion quees" id="como-funciona">
+      <div class="contenedor">
+        <div class="quees-grid">
+          <div class="quees-texto aparecer">
+            <h2>¿Qué es comprar una propiedad con <span class="dorado">financiamiento?</span></h2>
+            <div class="quees-destacado">
+              <span data-icono="manoDinero"></span>
+              <p>No necesitas pagar el 100% del valor de la propiedad de contado.</p>
+            </div>
+            <p class="quees-explica">Puedes adquirir tu propiedad aportando una <strong>entrada</strong> y <strong>financiar</strong> el valor restante mediante un crédito, pagando <strong>cuotas</strong> durante un plazo establecido.</p>
+          </div>
+          <div class="quees-foto aparecer">
+            <img src="img/portada/que-es-foto.jpg" width="486" height="768" loading="lazy" alt="Familia con las llaves de su nueva casa">
+          </div>
+        </div>
+
+        <ol class="pasos aparecer" aria-label="Cómo funciona">
+          <li class="paso">
+            <span class="paso-icono" data-icono="monedas"></span>
+            <strong class="paso-nombre">Entrada</strong>
+            <p>Una parte del valor de la propiedad.</p>
+          </li>
+          <li class="paso-signo" aria-hidden="true">+</li>
+          <li class="paso">
+            <span class="paso-icono" data-icono="banco"></span>
+            <strong class="paso-nombre">Financiamiento</strong>
+            <p>El valor restante.</p>
+          </li>
+          <li class="paso-signo flecha" aria-hidden="true">→</li>
+          <li class="paso">
+            <span class="paso-icono" data-icono="casa"></span>
+            <strong class="paso-nombre">¡Tu propiedad!</strong>
+            <p>Pagas el financiamiento en cuotas según las condiciones aprobadas.</p>
+          </li>
+        </ol>
+
+        <div class="quees-cierre aparecer">
+          <p class="frase-script">Tu propiedad puede estar más cerca de lo que <span class="dorado">imaginas</span>.</p>
+          <a class="btn btn-wa" data-wa-general data-wa-msg="Hola Andagana Corporación, me gustaría solicitar asesoría para comprar una propiedad con financiamiento." target="_blank" rel="noopener" data-icono="whatsapp">Solicitar asesoría</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. LISTADO Y FILTROS -->
     <section class="seccion" id="propiedades">
       <div class="contenedor">
         <div class="seccion-titulo">
@@ -132,23 +218,48 @@
           <a class="btn btn-wa" data-wa-general target="_blank" rel="noopener" data-icono="whatsapp">Escribir por WhatsApp</a>
         </div>
         <div class="contacto-tarjeta">
-          <div class="fila" data-icono="whatsapp"><div><small>WhatsApp</small><strong data-tel></strong></div></div>
-          <div class="fila" data-icono="ubicacion"><div><small>Cobertura</small><strong>Ambato, Quito y centro del país</strong></div></div>
+          <a class="fila" data-wa-general target="_blank" rel="noopener" data-icono="whatsapp"><div><small>WhatsApp</small><strong data-tel></strong></div></a>
+          <a class="fila" data-mapa-direccion target="_blank" rel="noopener" data-icono="ubicacion"><div><small>Dirección</small><strong data-direccion></strong></div></a>
           <div class="fila" data-icono="dinero"><div><small>Beneficio</small><strong>Financiamiento inmediato</strong></div></div>
+          <div class="fila redes-fila">
+            <div><small>Síguenos</small>
+              <div class="redes">
+                <a data-red="facebook" target="_blank" rel="noopener" data-icono="facebook">Facebook</a>
+                <a data-red="tiktok" target="_blank" rel="noopener" data-icono="tiktok">TikTok</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="pie">
-    <div class="contenedor">
-      <a class="marca" href="index.html">
-        <span class="marca-icono"><img src="img/logo-icono.png" alt=""></span>
-        <span class="marca-texto"><strong>ANDAGANA</strong><small>Corporación</small></span>
-      </a>
-      <div class="pie-eslogan">Financiamos <span class="script">Oportunidades</span>, Entregamos <span class="script">Hogares</span></div>
-      <div>© <span data-anio></span> Andagana Corporación</div>
+    <div class="contenedor pie-grid">
+      <div class="pie-marca">
+        <a class="marca" href="index.html">
+          <span class="marca-icono"><img src="img/logo-icono.png" alt=""></span>
+          <span class="marca-texto"><strong>ANDAGANA</strong><small>Corporación</small></span>
+        </a>
+        <p class="pie-eslogan">Financiamos <span class="script">oportunidades</span>, entregamos <span class="script">hogares</span>.</p>
+      </div>
+      <div class="pie-col">
+        <h4>Visítanos</h4>
+        <a class="pie-dato" data-mapa-direccion target="_blank" rel="noopener" data-icono="ubicacion"><span data-direccion></span></a>
+      </div>
+      <div class="pie-col">
+        <h4>Escríbenos</h4>
+        <a class="pie-dato" data-wa-general target="_blank" rel="noopener" data-icono="whatsapp"><span data-tel></span></a>
+      </div>
+      <div class="pie-col">
+        <h4>Síguenos</h4>
+        <div class="redes">
+          <a data-red="facebook" target="_blank" rel="noopener" data-icono="facebook">Facebook</a>
+          <a data-red="tiktok" target="_blank" rel="noopener" data-icono="tiktok">TikTok</a>
+        </div>
+      </div>
     </div>
+    <div class="contenedor pie-legal">© <span data-anio></span> Andagana Corporación. Todos los derechos reservados.</div>
   </footer>
 
   <a class="wa-flotante" data-wa-general target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" data-icono="whatsapp"></a>

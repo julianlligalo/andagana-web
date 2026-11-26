@@ -29,12 +29,21 @@
     apreton: '<path d="m11 17 2 2a1.4 1.4 0 0 0 2-2"/><path d="m14 14 2.5 2.5a1.4 1.4 0 0 0 2-2L15 11"/><path d="M3 8l4-4 5 5"/><path d="m21 8-4-4-4.5 4.5a2 2 0 0 0 2.8 2.8L17 9.5"/><path d="M3 8v6l6 6 2-2"/><path d="M21 8v6l-2 2"/>',
     rayo: '<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',
     telefono: '<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>',
-    mapa: '<path d="m9 4-6 3v13l6-3 6 3 6-3V4l-6 3z"/><path d="M9 4v13M15 7v13"/>'
+    mapa: '<path d="m9 4-6 3v13l6-3 6 3 6-3V4l-6 3z"/><path d="M9 4v13M15 7v13"/>',
+    monedas: '<ellipse cx="9" cy="6" rx="6" ry="2.5"/><path d="M3 6v4c0 1.4 2.7 2.5 6 2.5M3 10v4c0 1.4 2.7 2.5 6 2.5M3 14v4c0 1.4 2.7 2.5 6 2.5M15 6v2"/><circle cx="16.5" cy="15.5" r="5"/><path d="M18 13.6c-.4-.4-1-.6-1.6-.6-.9 0-1.6.5-1.6 1.2 0 1.6 3.3.8 3.3 2.5 0 .7-.7 1.2-1.7 1.2-.7 0-1.3-.3-1.7-.7M16.5 12.2v1M16.5 18v1"/>',
+    banco: '<path d="M3 9.5 12 4l9 5.5"/><path d="M4 9.5h16"/><path d="M6 12v5M10 12v5M14 12v5M18 12v5"/><path d="M4 17.5h16M3 20.5h18"/>',
+    manoDinero: '<circle cx="15" cy="7" r="4.2"/><path d="M15.9 5.4c-.3-.3-.7-.4-1.1-.4-.6 0-1.1.3-1.1.8 0 1.1 2.4.5 2.4 1.7 0 .5-.5.9-1.2.9-.5 0-.9-.2-1.2-.5M15 4v.9M15 9.1v.9"/><path d="M2 14h3l4.5-1.5c.9-.3 1.8.1 2.1.9.2.6-.1 1.2-.7 1.5L8.5 16"/><path d="M5 20l3.5-1.5h5.5c.8 0 1.5-.3 2-.8L21 13c.5-.6.4-1.4-.2-1.8-.5-.3-1.2-.3-1.7.1L15 14.5"/><path d="M2 14v6h3"/>',
+    citas: '<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="m9 15 2 2 4-4"/>'
+  };
+  const MARCAS = {
+    facebook: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21.9v-7.4h2.5l.4-2.9h-2.9V9.8c0-.8.2-1.4 1.4-1.4h1.6V5.8c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.1H7.8v2.9h2.6v7.3A10 10 0 1 1 13.5 21.9z"/></svg>',
+    tiktok: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 3h-3.1v12.4a2.7 2.7 0 1 1-2.7-2.7c.3 0 .5 0 .8.1V9.6a5.8 5.8 0 1 0 5 5.8V9.1a7.3 7.3 0 0 0 4.3 1.4V7.4c-2.3 0-4.3-1.9-4.3-4.4z"/></svg>'
   };
   const WA = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91A9.84 9.84 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.2 8.2 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23a7.46 7.46 0 0 1-1.38-1.72c-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48a.92.92 0 0 0-.67.31c-.23.25-.87.85-.87 2.08s.89 2.42 1.02 2.58c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>';
 
   function icono(nombre) {
     if (nombre === "whatsapp") return WA;
+    if (MARCAS[nombre]) return MARCAS[nombre];
     return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (P[nombre] || "") + "</svg>";
   }
 
@@ -82,17 +91,19 @@
   }
 
   // ---------- WhatsApp ----------
-  function whatsappURL(p) {
+  function whatsappURL(p, mensaje) {
     const cfg = window.ANDAGANA || {};
-    let msg;
-    if (p) {
+    let msg = mensaje;
+    if (msg) {
+      // mensaje personalizado (por ejemplo, "Agenda tu cita")
+    } else if (p) {
       const cod = p.codigo ? "con código *" + p.codigo + "*" : "(sin código)";
       msg = "Hola Andagana Corporación, me interesa la propiedad " + cod + ": " + p.titulo +
         " (" + ubicacion(p) + "), " + precioPlano(p) + ". ¿Me pueden dar más información sobre el financiamiento?";
     } else {
       msg = "Hola Andagana Corporación, me gustaría recibir información sobre sus propiedades y el financiamiento inmediato.";
     }
-    return "https://wa.me/" + (cfg.whatsapp || "593960574213") + "?text=" + encodeURIComponent(msg);
+    return "https://wa.me/" + (cfg.whatsapp || "593992674556") + "?text=" + encodeURIComponent(msg);
   }
 
   // ---------- Tarjeta de propiedad ----------
@@ -119,9 +130,18 @@
   }
 
   function iniciarComun() {
-    document.querySelectorAll("[data-wa-general]").forEach(a => { a.href = whatsappURL(null); });
+    const cfg = window.ANDAGANA || {};
+    document.querySelectorAll("[data-wa-general]").forEach(a => { a.href = whatsappURL(null, a.dataset.waMsg); });
     document.querySelectorAll("[data-icono]").forEach(el => { el.insertAdjacentHTML("afterbegin", icono(el.dataset.icono)); });
-    document.querySelectorAll("[data-tel]").forEach(el => { el.textContent = (window.ANDAGANA || {}).whatsappVisible || ""; });
+    document.querySelectorAll("[data-tel]").forEach(el => { el.textContent = cfg.whatsappVisible || ""; });
+    document.querySelectorAll("[data-direccion]").forEach(el => { el.textContent = cfg.direccion || ""; });
+    document.querySelectorAll("[data-mapa-direccion]").forEach(a => {
+      a.href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent((cfg.direccion || "") + ", Ecuador");
+    });
+    document.querySelectorAll("[data-red]").forEach(a => {
+      const url = cfg[a.dataset.red];
+      if (url) a.href = url; else a.hidden = true;
+    });
     document.querySelectorAll("[data-anio]").forEach(el => { el.textContent = new Date().getFullYear(); });
   }
 

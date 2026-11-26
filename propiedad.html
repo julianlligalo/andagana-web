@@ -21,6 +21,7 @@
       </a>
       <nav class="nav" aria-label="Principal">
         <a class="enlace" href="index.html">Inicio</a>
+        <a class="enlace" href="index.html#financiamiento">Financiamiento</a>
         <a class="enlace" href="index.html#propiedades">Propiedades</a>
         <a class="enlace" href="index.html#contacto">Contacto</a>
         <a class="btn btn-wa" id="wa-cabecera" target="_blank" rel="noopener" data-icono="whatsapp"><span><span class="txt-largo">Consultar por </span>WhatsApp</span></a>
@@ -33,14 +34,31 @@
   </main>
 
   <footer class="pie">
-    <div class="contenedor">
-      <a class="marca" href="index.html">
-        <span class="marca-icono"><img src="img/logo-icono.png" alt=""></span>
-        <span class="marca-texto"><strong>ANDAGANA</strong><small>Corporación</small></span>
-      </a>
-      <div class="pie-eslogan">Financiamos <span class="script">Oportunidades</span>, Entregamos <span class="script">Hogares</span></div>
-      <div>© <span data-anio></span> Andagana Corporación</div>
+    <div class="contenedor pie-grid">
+      <div class="pie-marca">
+        <a class="marca" href="index.html">
+          <span class="marca-icono"><img src="img/logo-icono.png" alt=""></span>
+          <span class="marca-texto"><strong>ANDAGANA</strong><small>Corporación</small></span>
+        </a>
+        <p class="pie-eslogan">Financiamos <span class="script">oportunidades</span>, entregamos <span class="script">hogares</span>.</p>
+      </div>
+      <div class="pie-col">
+        <h4>Visítanos</h4>
+        <a class="pie-dato" data-mapa-direccion target="_blank" rel="noopener" data-icono="ubicacion"><span data-direccion></span></a>
+      </div>
+      <div class="pie-col">
+        <h4>Escríbenos</h4>
+        <a class="pie-dato" data-wa-general target="_blank" rel="noopener" data-icono="whatsapp"><span data-tel></span></a>
+      </div>
+      <div class="pie-col">
+        <h4>Síguenos</h4>
+        <div class="redes">
+          <a data-red="facebook" target="_blank" rel="noopener" data-icono="facebook">Facebook</a>
+          <a data-red="tiktok" target="_blank" rel="noopener" data-icono="tiktok">TikTok</a>
+        </div>
+      </div>
     </div>
+    <div class="contenedor pie-legal">© <span data-anio></span> Andagana Corporación. Todos los derechos reservados.</div>
   </footer>
 
   <div class="visor" id="visor" role="dialog" aria-modal="true" aria-label="Fotos de la propiedad">

@@ -10,11 +10,6 @@
   const normal = s => String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
   const unicos = arr => Array.from(new Set(arr.filter(Boolean))).sort((a, b) => a.localeCompare(b, "es"));
 
-  // ---------- Cifras de la portada ----------
-  $("cifra-total").textContent = TODAS.length;
-  $("cifra-cantones").textContent = unicos(TODAS.map(p => p.canton)).length;
-  $("cifra-provincias").textContent = unicos(TODAS.map(p => p.provincia)).length;
-
   // ---------- Botones de tipo ----------
   function pintarTipos() {
     const base = filtrar(Object.assign({}, estado, { tipo: "" }));
