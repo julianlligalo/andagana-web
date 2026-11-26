@@ -266,7 +266,7 @@ foreach ($f in $archivos) {
 }
 
 # Códigos repetidos
-$propiedades | Where-Object { $_.codigo } | Group-Object { $_.codigo.ToUpper() } | Where-Object { $_.Count -gt 1 } | ForEach-Object {
+$propiedades | Where-Object { $_.codigo } | Group-Object { $_.codigo.ToUpper() } | Where-Object { $_.Count -gt 1 } | Sort-Object { $_.Group[0].id } | ForEach-Object {
   $lista = ($_.Group | ForEach-Object { "«$($_.titulo)» (data/propiedades/$($_.id).json)" }) -join ", "
   Add-Error "data/propiedades/$($_.Group[0].id).json" "El código $($_.Name) está repetido en $($_.Count) propiedades: $lista."
 }
