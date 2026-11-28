@@ -10,6 +10,7 @@ window.ANDAGANA = {
   whatsapp: "593992674556",           // número en formato internacional, sin "+" ni espacios
   whatsappVisible: "+593 99 267 4556",
   telefonoLocal: "0992674556",
+  whatsappReferidos: "593982011648", // asesor que recibe la copia de "Recomienda y gana" (paso 2)
   direccion: "Luis Ernesto Alvarado y Marcos Montalvo, Ambato",
   /* Oficinas: aparecen en la sección "Nuestras oficinas" y en el pie de página.
      "mapa" es el texto que se busca en Google Maps (puede ser más corto que la dirección). */

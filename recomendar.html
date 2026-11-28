@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recomienda y gana hasta $500 | Andagana Corporación</title>
+  <meta name="description" content="¿Conoces a alguien que vende su propiedad? Recomiéndalo a Andagana Corporación y gana hasta $500 de comisión al firmarse la escritura.">
+  <meta name="theme-color" content="#0a1a45">
+  <link rel="icon" type="image/png" href="img/logo-icono.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <!-- Google Analytics 4 y aviso de cookies -->
+  <script src="js/analitica.js"></script>
+  <!-- Contador de visitas (GoatCounter) -->
+  <script src="js/contador.js" defer></script>
+</head>
+<body class="pagina-recomendar">
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="marca" href="index.html" aria-label="Andagana Corporación, inicio">
+        <span class="marca-icono"><img src="img/logo-icono.png" alt=""></span>
+        <span class="marca-texto"><strong>ANDAGANA</strong><small>Corporación</small></span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a class="enlace" href="index.html">Inicio</a>
+        <a class="enlace" href="index.html#financiamiento">Financiamiento</a>
+        <a class="enlace" href="index.html#propiedades">Propiedades</a>
+        <a class="enlace" href="index.html#contacto">Contacto</a>
+        <a class="enlace-referidos activo" href="recomendar.html" aria-current="page" data-icono="regalo"><span>Recomienda y gana</span></a>
+        <a class="btn btn-wa" data-wa-general target="_blank" rel="noopener" data-icono="whatsapp"><span><span class="txt-largo">Escríbenos por </span>WhatsApp</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="recomendar">
+    <!-- PORTADA -->
+    <section class="rec-portada">
+      <div class="contenedor rec-portada-grid">
+        <div class="aparecer">
+          <span class="referidos-etiqueta" data-icono="regalo">Programa de referidos</span>
+          <h1>¿Conoces a alguien que vende su propiedad? <span class="dorado">Recomiéndalo y gana hasta&nbsp;$500</span></h1>
+          <p>Refiérenos el contacto y cobra tu comisión al firmarse la escritura. Llenarlo toma 2 minutos y lo envías por WhatsApp.</p>
+          <div class="rec-portada-botones">
+            <a class="btn btn-oro" href="#formulario" data-icono="chat">Recomendar una propiedad</a>
+            <a class="btn btn-borde" href="#como-funciona">¿Cómo funciona?</a>
+          </div>
+        </div>
+        <div class="referidos-medalla grande aparecer" aria-hidden="true">
+          <span class="medalla-hasta">hasta</span>
+          <span class="medalla-monto"><sup>$</sup>500</span>
+          <span class="medalla-pie">de comisión</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ¿CÓMO FUNCIONA? -->
+    <section class="seccion rec-como" id="como-funciona">
+      <div class="contenedor">
+        <div class="seccion-titulo">
+          <div>
+            <span class="eyebrow">Así de fácil</span>
+            <h2>¿Cómo funciona?</h2>
+          </div>
+        </div>
+        <ol class="rec-pasos">
+          <li class="rec-paso aparecer">
+            <span class="rec-paso-num">1</span>
+            <span class="rec-paso-icono" data-icono="chat"></span>
+            <h3>Recomiendas</h3>
+            <p>Llena el formulario con tus datos, los del propietario y la propiedad, y envíalo por WhatsApp.</p>
+          </li>
+          <li class="rec-paso aparecer">
+            <span class="rec-paso-num">2</span>
+            <span class="rec-paso-icono" data-icono="apreton"></span>
+            <h3>Contactamos al propietario</h3>
+            <p>Un asesor de Andagana lo llama y lo acompaña en la venta de su propiedad.</p>
+          </li>
+          <li class="rec-paso aparecer">
+            <span class="rec-paso-num">3</span>
+            <span class="rec-paso-icono" data-icono="firma"></span>
+            <h3>Cobras hasta $500</h3>
+            <p>Recibes tu comisión al firmarse la escritura de compraventa.</p>
+          </li>
+        </ol>
+
+        <div class="rec-condiciones aparecer">
+          <h3>Condiciones</h3>
+          <ul>
+            <li>El pago es de <strong>hasta $500</strong>, según el valor de la venta, y se paga al <strong>firmarse la escritura de compraventa</strong>.</li>
+            <li>La propiedad no debe estar ya registrada con nosotros ni haber sido recomendada antes por otra persona.</li>
+            <li>Corporación Andagana confirmará el monto al recibir la recomendación.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="seccion rec-formulario" id="formulario">
+      <div class="contenedor rec-contenedor">
+        <div class="seccion-titulo">
+          <div>
+            <span class="eyebrow">Formulario</span>
+            <h2>Recomendar una propiedad</h2>
+            <p>Los campos con <span class="obligatorio">*</span> son obligatorios.</p>
+          </div>
+        </div>
+
+        <form class="rec-form" id="form-recomendar" novalidate>
+          <!-- Tus datos -->
+          <fieldset class="rec-bloque">
+            <legend><span class="rec-bloque-num">1</span> Tus datos <small>(quien recomienda)</small></legend>
+            <div class="rec-campos">
+              <div class="rec-campo ancho">
+                <label for="r-nombre">Nombre completo <span class="obligatorio">*</span></label>
+                <input id="r-nombre" name="refNombre" type="text" autocomplete="name" autocapitalize="words" required maxlength="80">
+              </div>
+              <div class="rec-campo">
+                <label for="r-celular">Celular / WhatsApp <span class="obligatorio">*</span></label>
+                <input id="r-celular" name="refCelular" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="09XXXXXXXX" required maxlength="16" data-celular>
+              </div>
+              <div class="rec-campo">
+                <label for="r-ciudad">Ciudad</label>
+                <input id="r-ciudad" name="refCiudad" type="text" autocapitalize="words" maxlength="60" list="lista-cantones">
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Propietario -->
+          <fieldset class="rec-bloque">
+            <legend><span class="rec-bloque-num">2</span> Datos del propietario</legend>
+            <div class="rec-campos">
+              <div class="rec-campo">
+                <label for="p-nombre">Nombre <span class="obligatorio">*</span></label>
+                <input id="p-nombre" name="propNombre" type="text" autocomplete="off" autocapitalize="words" required maxlength="80">
+              </div>
+              <div class="rec-campo">
+                <label for="p-celular">Celular <span class="obligatorio">*</span></label>
+                <input id="p-celular" name="propCelular" type="tel" inputmode="numeric" autocomplete="off" placeholder="09XXXXXXXX" required maxlength="16" data-celular>
+              </div>
+              <div class="rec-campo ancho" role="radiogroup" aria-labelledby="l-sabe" data-requerido="propSabe">
+                <span class="rec-label" id="l-sabe">¿El propietario sabe que nos pasas su contacto? <span class="obligatorio">*</span></span>
+                <div class="opciones dos">
+                  <label class="opcion"><input type="radio" name="propSabe" value="Sí"><span>Sí</span></label>
+                  <label class="opcion"><input type="radio" name="propSabe" value="No"><span>No</span></label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Propiedad -->
+          <fieldset class="rec-bloque">
+            <legend><span class="rec-bloque-num">3</span> La propiedad</legend>
+            <div class="rec-campos">
+              <div class="rec-campo ancho" role="radiogroup" aria-labelledby="l-tipo" data-requerido="tipo">
+                <span class="rec-label" id="l-tipo">Tipo <span class="obligatorio">*</span></span>
+                <div class="opciones tipos">
+                  <label class="opcion"><input type="radio" name="tipo" value="Casa"><span>Casa</span></label>
+                  <label class="opcion"><input type="radio" name="tipo" value="Terreno / lote"><span>Terreno / lote</span></label>
+                  <label class="opcion"><input type="radio" name="tipo" value="Departamento"><span>Departamento</span></label>
+                  <label class="opcion"><input type="radio" name="tipo" value="Local"><span>Local</span></label>
+                  <label class="opcion"><input type="radio" name="tipo" value="Casa rentera"><span>Casa rentera</span></label>
+                  <label class="opcion"><input type="radio" name="tipo" value="Quinta"><span>Quinta</span></label>
+                  <label class="opcion"><input type="radio" name="tipo" value="Otro"><span>Otro</span></label>
+                </div>
+              </div>
+              <div class="rec-campo ancho" role="radiogroup" aria-labelledby="l-operacion">
+                <span class="rec-label" id="l-operacion">Operación</span>
+                <div class="opciones dos">
+                  <label class="opcion"><input type="radio" name="operacion" value="Venta" checked><span>Venta</span></label>
+                  <label class="opcion"><input type="radio" name="operacion" value="Arriendo"><span>Arriendo</span></label>
+                </div>
+              </div>
+              <div class="rec-campo">
+                <label for="p-canton">Cantón <span class="obligatorio">*</span></label>
+                <input id="p-canton" name="canton" type="text" autocapitalize="words" required maxlength="60" list="lista-cantones" placeholder="Ej.: Ambato">
+              </div>
+              <div class="rec-campo">
+                <label for="p-sector">Sector o dirección referencial <span class="obligatorio">*</span></label>
+                <input id="p-sector" name="sector" type="text" required maxlength="140" placeholder="Ej.: Huachi Grande, cerca del parque">
+              </div>
+              <div class="rec-campo">
+                <label for="p-terreno">Área aprox. de terreno (m²)</label>
+                <input id="p-terreno" name="areaTerreno" type="text" inputmode="decimal" maxlength="12" data-numero placeholder="Ej.: 300">
+              </div>
+              <div class="rec-campo">
+                <label for="p-construccion">Área aprox. de construcción (m²)</label>
+                <input id="p-construccion" name="areaConstruccion" type="text" inputmode="decimal" maxlength="12" data-numero placeholder="Ej.: 150">
+              </div>
+              <div class="rec-campo">
+                <label for="p-precio">Precio que pide el dueño (aprox., USD)</label>
+                <div class="con-prefijo"><span>$</span><input id="p-precio" name="precio" type="text" inputmode="numeric" maxlength="14" data-numero data-miles placeholder="Ej.: 85.000"></div>
+              </div>
+              <div class="rec-campo" role="radiogroup" aria-labelledby="l-escrituras">
+                <span class="rec-label" id="l-escrituras">¿Tiene escrituras?</span>
+                <div class="opciones tres">
+                  <label class="opcion"><input type="radio" name="escrituras" value="Sí"><span>Sí</span></label>
+                  <label class="opcion"><input type="radio" name="escrituras" value="No"><span>No</span></label>
+                  <label class="opcion"><input type="radio" name="escrituras" value="No sé"><span>No sé</span></label>
+                </div>
+              </div>
+              <div class="rec-campo ancho">
+                <label for="p-comentarios">Comentarios</label>
+                <textarea id="p-comentarios" name="comentarios" rows="3" maxlength="600" placeholder="Cualquier dato útil: estado de la casa, mejor hora para llamar al dueño, etc."></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="rec-consentimiento" data-requerido="acepto">
+            <label class="casilla">
+              <input type="checkbox" name="acepto" id="r-acepto">
+              <span>Acepto que Corporación Andagana use estos datos solo para contactar al propietario sobre la venta de su propiedad. <span class="obligatorio">*</span></span>
+            </label>
+          </div>
+
+          <p class="rec-error-general" id="error-general" role="alert" hidden></p>
+
+          <button type="submit" class="btn btn-wa btn-bloque btn-enviar" data-icono="whatsapp">Enviar recomendación</button>
+          <p class="rec-fotos" data-icono="camara">Si tienes fotos de la propiedad, envíalas en el mismo chat de WhatsApp.</p>
+
+          <datalist id="lista-cantones">
+            <option value="Ambato"><option value="Baños"><option value="Cevallos"><option value="Mocha">
+            <option value="Patate"><option value="Pelileo"><option value="Píllaro"><option value="Quero">
+            <option value="Tisaleo"><option value="Quito"><option value="Rumiñahui"><option value="Mejía">
+            <option value="Latacunga"><option value="Salcedo"><option value="Riobamba"><option value="Guaranda">
+            <option value="Puyo"><option value="Tena">
+          </datalist>
+        </form>
+
+        <!-- Pasos de envío (se muestran después de enviar) -->
+        <div class="rec-estado" id="estado-envio" hidden tabindex="-1" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie-grid">
+      <div class="pie-marca">
+        <a class="marca" href="index.html">
+          <span class="marca-icono"><img src="img/logo-icono.png" alt=""></span>
+          <span class="marca-texto"><strong>ANDAGANA</strong><small>Corporación</small></span>
+        </a>
+        <p class="pie-eslogan">Financiamos <span class="script">oportunidades</span>, entregamos <span class="script">hogares</span>.</p>
+      </div>
+      <div class="pie-col pie-oficinas">
+        <h4>Nuestras oficinas</h4>
+        <div class="pie-oficinas-lista" data-oficinas-pie></div>
+      </div>
+      <div class="pie-col">
+        <h4>Síguenos</h4>
+        <div class="redes">
+          <a data-red="facebook" target="_blank" rel="noopener" data-icono="facebook">Facebook</a>
+          <a data-red="tiktok" target="_blank" rel="noopener" data-icono="tiktok">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor pie-legal"><span>© <span data-anio></span> Andagana Corporación. Todos los derechos reservados. · <button type="button" class="enlace-cookies" data-cookies>Preferencias de cookies</button></span><span class="contador-visitas" id="contador-visitas" hidden></span></div>
+  </footer>
+
+  <a class="wa-flotante" data-wa-general target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" data-icono="whatsapp"></a>
+
+  <script src="data/empresa.js"></script>
+  <script src="js/comun.js"></script>
+  <script src="js/recomendar.js"></script>
+</body>
+</html>

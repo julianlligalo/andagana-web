@@ -10,6 +10,9 @@
      ver_propiedad   -> cada vez que se abre la ficha de una propiedad
      usar_filtro     -> cada cambio en los filtros del listado
      clic_como_llegar-> clic en "Cómo llegar" de una oficina
+     recomendacion_paso_1 -> "Enviar recomendación" (WhatsApp principal)
+     recomendacion_paso_2 -> "Enviar copia al asesor" (WhatsApp del asesor)
+                        Solo se envía tipo, cantón y operación: nunca nombres ni celulares.
    ========================================================== */
 (function () {
   "use strict";
@@ -55,6 +58,8 @@
     [".wa-flotante", "boton_flotante"],
     [".barra-movil", "barra_movil"],
     [".precio-caja", "ficha_precio"],
+    [".rec-estado", "recomendar_copia_asesor"],
+    [".recomendar", "pagina_recomendar"],
     [".banner", "portada"],
     ["#oficinas", "seccion_oficinas"],
     ["#financiamiento", "seccion_financiamiento"],
@@ -82,7 +87,7 @@
     var p = window.AG_PROPIEDAD; // la fija propiedad.js en la ficha
     var datos = {
       ubicacion_boton: origen(a),
-      pagina: p ? "ficha" : "inicio",
+      pagina: p ? "ficha" : (document.body.classList.contains("pagina-recomendar") ? "recomendar" : "inicio"),
       texto_boton: (a.textContent || "").trim().slice(0, 60) || "WhatsApp"
     };
     var oficina = a.closest("[data-oficina]");
